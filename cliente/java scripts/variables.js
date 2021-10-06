@@ -1,0 +1,13 @@
+document.write("<hl> Variables explicitas </h1>");
+var num = 5;
+var text = "Texto";
+var float = 4.5;
+var bool = false;
+var str = "Variable num " + "su valor es: " + num + " y su tipo de datos es: " typeof(num);
+document.write(str);
+str = "<br>Variable text" + " su valor es: " + text + " y su tipo de datos es: " + typeof(text); 
+document.writeln(str);
+str = "<br>Variable float" + " su valor es: " + float + " y su tipo de datos es: " + typeof(float); 
+document.writeln(str);
+str = "<br>Variable bool" + " su valor es: " + bool + " y su tipo de datos es: " + typeof(bool); 
+document.writeln(str);
