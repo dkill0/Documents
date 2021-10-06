@@ -14,6 +14,11 @@
 		
 			<input type="text" readonly name="ventana" id="ventana" style="text-align: right" value="0">
 			<br>
+			<button style="width: 20%" onclick="poner_valor(7)">7</button>
+			<br>
+			<button style="width: 20%" onclick="borrar()">Borrar</button>
+			<br>
+	</font>
 	
 	
 	</body>
