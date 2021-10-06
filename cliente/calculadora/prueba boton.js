@@ -8,7 +8,15 @@
 	
 	
 	</head>
-	<body></body>
+	<body>
+	<font size="15">
+		<center>CALCULADORA</center>
+		
+			<input type="text" readonly name="ventana" id="ventana" style="text-align: right" value="0">
+			<br>
+	
+	
+	</body>
 	
 
 
