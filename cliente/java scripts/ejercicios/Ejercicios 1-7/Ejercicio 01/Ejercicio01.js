@@ -1,11 +1,16 @@
-//Variable
-var num1 = parseInt(prompt('Introduce un numero'));
-var num2= 0;
-//Bucle que acumula el valor anterior del numero y opera
-while(num1>-1){
-	 
-	 num1 = parseInt(prompt('numero actual: '+num1+'\nnumero 2: '+num2+'\nMedia: '+((num2+num1)/2)+ '\nSuma: '+ (num2+num1)+'\nIntroduce otro numero'));
-	
-	num2=num1;
+//Variables
+var num=0;
+var media;
+var suma=0;
+var cont=0;
+//Bucle que repite la introduccion de un numero mientras no sea negativo, suma y acumula los numeros
+while(num>=0){
+    var num = parseInt(prompt("Introduce un numero:",0));
+    if(num>0) {
+        suma += num;
+        cont++;
+    }
 }
-
+media = suma/cont;
+alert("La suma es: " + suma);
+alert("La media es " + media);
