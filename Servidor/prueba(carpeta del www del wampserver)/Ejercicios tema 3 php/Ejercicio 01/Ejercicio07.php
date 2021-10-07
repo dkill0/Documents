@@ -8,7 +8,8 @@
 </head>
 <body>
     <?php
-        echo "<strong>Carlos</strong>"
+        echo "<strong>Carlos</strong> <br>";
+        echo "Campos del Rio, Murcia";
     ?>
 
 
