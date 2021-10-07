@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<title>Productos</title>
+		<meta name="keywords" content="bodegas en Murcia, vinos de calidad"/> 
+		<meta name="description" content="Venta de vinos"/> 
+	
+	</head>
+	<body>
+		<table width="800" border="1">
+			<tr >
+				<td width="25%" colspan="4" ><img src=".\img\banner.jpg" alt="banner"></td>
+
+			</tr>
+			
+			<tr >
+				<td width="25%">Alma de Luzon</td>
+				<td rowspan="4" width="25%"> <img src=".\img\botella1.jpg" alt="botella 1"></td>
+				<td width="25%">Altos de Luzon</td>
+				<td rowspan="4" width="25%"> <img src=".\img\botella2.jpg" alt="botella 2"></td>
+				
+			</tr>
+			
+			<tr >
+				<td width="25%">Vino tinto</td>
+				<td width="25%">Vino tinto</td>
+			</tr>
+			
+			<tr >
+				<td width="25%">210,00 Euros</td>
+				<td width="25%">163,00 Euros</td>
+			</tr>
+		
+			<tr > 
+				<td width="25%">
+					<p><strong>Aroma: <br></strong> Intenso y complejos aromas a fruta negra en licor, cacao, especiado roble fino. </p>
+					<p><strong>Paladar: <br></strong> Carnoso, taninos maduros y dulces, frescos y frutales, sabroso y potente complejo.</p>
+				</td>
+
+				<td width="25%">
+					<p><strong>Aroma: <br></strong>Frutos maduros, mora, ciruela, motas de vainilla, torrefactas, bals&aacute;mico, personal y complejo.</p>
+					<p><strong>Paladar: <br></strong>Amplio, mineral, tanitos maduros, goloso, redondo y pulido, final persistente.</p>
+					
+				</td>
+			</tr>
+			
+		
+		
+		
+		</table>
+		
+		
+		<table  width="800" border="1">
+		<form action="envio.php" method="post">
+		
+			<tr>
+				<td width="25%">Nombre</td>
+				<td ><input name="nombre" type="text" maxlength="10" size="25%" placeholder="Jose L&uacute;is"></td>
+				<td width="25%">Apellidos</td>
+				<td ><input name="apellidos" type="text" maxlength="10"  size="25%" placeholder="P&eacute;rez Garc&iacute;a"></td>
+			</tr>
+			
+			<tr >
+				<td width="25%">Correo Electr&oacute;nico</td>
+				<td><input name="email" type="text" maxlength="10" size="25%" placeholder="info@gmail.com"></td>
+				<td width="25%">Tipo de Vinos</td>
+				<td width="25%"><select name="Tipo_vino">
+						<option>Tintos</option>
+						<option>Rosados</option>
+						<option>Blancos</option>
+						<option>Todos</option>
+					</select>
+				</td>
+			</tr>
+			
+			<tr >
+				<td width="25%">Sexo</td>
+				<td width="25%"colspan="3">Observaciones</td>
+				
+			</tr>
+			
+			<tr >
+				<td width="25%">
+					<input name="sexo" type="radio" value="Mujer">Mujer<br>
+					<input name="sexo" type="radio" value="Hombre">Hombre<br>
+					
+				<td width="25%" colspan="3">
+					<textarea name="comentario" cols="50" rows="5" placeholder="Deseo recibir informaci&iacute;n sobre estas promociones en mi correo electr&oacute;nico." ></textarea>		
+				</td>
+			</tr>
+			
+			<tr >
+					<td width="25%" colspan="4">
+						<input name="aceptacion" type="checkbox" value="">Acepto los t&eacute;rminos de uso de esta informaci&oacute;n y el env&iacute;o de publicidad.<br>
+					</td>
+			</tr>
+			
+			<tr >
+				<td width="25%" colspan="2"><input type="submit" value="Enviar datos"></td>
+				<td width="25%" colspan="2"> <input type="reset"  value="Borrar datos"></td>
+			</tr>
+		</form>
+		</table>
+	
+	
+	
+	</body>
+</html>
