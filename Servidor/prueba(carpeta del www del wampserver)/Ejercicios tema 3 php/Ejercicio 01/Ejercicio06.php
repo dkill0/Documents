@@ -13,6 +13,9 @@
     $cadena3 = 'Juanito*23545*Murcia';
     
     echo substr($cadena1,17,20);
+    echo strtoupper($cadena2);
+    echo str_replace("MySQL",$cadena2,$cadena1);
+    echo explode("*",$cadena3);
 
 
     ?>
