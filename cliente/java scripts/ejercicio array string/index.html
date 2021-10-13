@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+//Creacion del Array
+ var array1= new Array(4, 6, 2, 1, 8);
+
+function quitar(){
+
+	array1.pop();
+	document.getElementById("numeros").innerHTML=array1;
+}
+
+function nuevoElem(params) {
+	
+}
+</script>
+
+
+</head>
+<body>
+
+
+			<p align="center" id="numeros">4,6,2,1,8</p>
+			<button style="width: 20%" onclick="quitar()">Eliminar el ultimo elemento</button>
+			<button style="width: 20%" onclick="">Añadir nuevo numero al final</button>
+			<button style="width: 20%" onclick="">Quitar el primer elemento</button>
+			<button style="width: 20%" onclick="">Añadir un elemento al principio</button>
+			<button style="width: 20%" onclick="">Cambiar el valor 2 por el valor 15</button>
+			<button style="width: 20%" onclick="">Añadir valores 23 y 30</button>
+			<button style="width: 20%" onclick="">Crear un nuevo array</button>
+			<button style="width: 20%" onclick="">Ordenar el array ASC</button>
+			<button style="width: 20%" onclick="">Ordenar el array DESC</button>
+			
+</body>
+</html>
