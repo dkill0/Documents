@@ -5,8 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script>
+        var cadena=document.getElementById("cadena").innerHTML;
+        
+        var palabra=document.getElementById("palabra").innerHTML;
+        
+
+        palabra.toLowerCase();
+        cadena.toLowerCase();
+        
+       
+        function contarPalabra(){
+            var str = cadena.split(" ");
+            var cont = 0;
+        for(var i = 0; i<str.length;i++){
+         if(str[i].indexOf(palabra)!=-1){
+                cont++;
+            }
+        
+       }
+
+       console.log(cont);
+        document.getElementById("resultado").innerHTML=cont;
+        }
+       
+          
+     
+
+
+    </script>
 </head>
 <body>
-    
+   
+   
+ <input id="cadena" type="text" maxlength="10" size="15">
+ <br>
+ <input id="palabra" type="text" maxlength="10" size="15">
+ <br>
+ <button style="width: 20%" onclick="contarPalabra()">Encontrar coincidencias</button>
+  
+<p id="resultado"> 0 </p>
+
 </body>
 </html>
