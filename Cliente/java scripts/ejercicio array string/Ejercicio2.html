@@ -7,20 +7,20 @@
     <title>Document</title>
 
     <script>
-        var cadena=document.getElementById("cadena").innerHTML;
+        var cadena=document.getElementById("cadena");
         
-        var palabra=document.getElementById("palabra").innerHTML;
+        var palabra=document.getElementById("palabra");
         
 
-        palabra.toLowerCase();
-        cadena.toLowerCase();
+        var palabra1 = palabra.toLowerCase();
+        var cadena1 = cadena.toLowerCase();
         
        
         function contarPalabra(){
-            var str = cadena.split(" ");
+            var str = cadena1.split(" ");
             var cont = 0;
         for(var i = 0; i<str.length;i++){
-         if(str[i].indexOf(palabra)!=-1){
+         if(str[i].indexOf(palabra1)!=-1){
                 cont++;
             }
         
@@ -45,7 +45,7 @@
  <br>
  <button style="width: 20%" onclick="contarPalabra()">Encontrar coincidencias</button>
   
-<p id="resultado"> 0 </p>
+<p id="resultado">0</p>
 
 </body>
 </html>
