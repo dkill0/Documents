@@ -16,20 +16,20 @@
 		array1.splice(array1.length,0,num);
 		document.getElementById("numeros").innerHTML=array1;
 	} 
-//Funcion que elimina el primer elemento del array
+	//Funcion que elimina el primer elemento del array
 	function quitarPrimerElemento() {
 		array1.shift();
 		document.getElementById("numeros").innerHTML=array1;
 
 	}
-//Funcion que pide un numero y lo añade al array al principio
+	//Funcion que pide un numero y lo añade al array al principio
 	function nuevoAlPrincipio() {
 		var num = prompt("Introduce un numero: ");
 		array1.splice(0,0,num);
 		document.getElementById("numeros").innerHTML=array1;
 		
 	}
-//Funcion que cambia los numeros 2 del array por el numero 15
+	//Funcion que cambia los numeros 2 del array por el numero 15
 	function cambioDeValores() {
 		
 		for(var i = 0; i<array1.length; i++){
@@ -40,7 +40,7 @@
 		}
 		document.getElementById("numeros").innerHTML=array1;
 	}
-//Funcion que añade en la posicion 3 dos numeros sin eliminar el resto
+	//Funcion que añade en la posicion 3 dos numeros sin eliminar el resto
 	function nuevosValores() {
 		array1.splice(3,0,23,30);
 		document.getElementById("numeros").innerHTML=array1;
