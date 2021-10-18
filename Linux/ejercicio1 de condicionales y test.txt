@@ -1,0 +1,66 @@
+#!bin/bash
+
+if test -r "$1"
+then 
+	echo "Tiene permisos de lectura"
+fi
+
+if test -w "$1"
+then 
+	echo "Tiene permisos de escritura"
+fi
+
+if test -x "$1"
+then 
+	echo "Tiene permisos de ejecucion"
+fi
+
+
+#!/bin/bash
+echo -n "Introduce una palabra: "
+read $palabra1
+echo -n "Introduce otra palabra: "
+read $palabra2
+
+if $palabra1 -eq $palabra2
+then
+	echo "La palabra es igual"
+else 	
+	echo "La palabra es distinta"
+fi
+
+#!/bin/bash
+for var in *
+do
+echo $var
+if test -f 
+then
+echo "Es un fichero regular"
+elif test -d
+echo "Es un directorio"
+else
+echo no es ni fichero ni directorio
+fi
+done
+
+#!/bin/bash
+
+
+echo -n "Introduce un valor: "
+read $num
+while [ $num != 0 ]
+do
+	echo -n "Introduce un valor"
+	read $num
+done
+
+
+#!/bin/bash
+
+for var in $*
+do
+	resultado =  `expr $var % 2`
+	
+		echo $var
+	
+done
