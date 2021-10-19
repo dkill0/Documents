@@ -1,0 +1,17 @@
+table.tabla01 {
+	background-color: #ededed;
+	 
+	
+}
+
+tr.bgcolor01 {
+	background-color: #dbdbdb;
+}
+
+table.tabla01 th {
+	background-color: #7c7c7c;
+}
+
+table.tabla01 th, table.tabla01 td {
+	border-bottom: 1px dashed #9e9e9e;
+}

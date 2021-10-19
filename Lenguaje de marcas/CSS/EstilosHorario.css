@@ -1,0 +1,42 @@
+table.tabla1 {
+
+	border-top: 2px dashed #000000;
+	border-right: 2px solid #000000;
+	border-bottom: 2px solid #000000;
+	border-left: 2px solid #000000;
+	
+}
+
+
+td.LM{
+	border:2px solid #B22323;
+
+	background-color: #FF3333;
+}
+
+td.ES{
+	border:2px solid #7ACC7A;
+	
+	background-color: #99FF99;
+}
+td.DIW{
+	
+	border:2px solid #CCCC7A;
+	
+	background-color: #FFFF99;
+}
+
+td.DAW{
+	border:2px solid #226544;
+	
+	background-color: #339966;
+}
+td.EC{
+	border:2px solid #51A3CC;
+	
+	background-color: #66CCFF;
+}
+
+
+text-decoration: underline
+letter-spacing: 5px
