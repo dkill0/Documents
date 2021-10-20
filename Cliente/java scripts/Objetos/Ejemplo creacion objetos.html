@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script>
+    function creaCub(arg1,arg2,arg3) {
+        this.x=parseInt(arg1);
+        this.y=parseInt(arg2);
+        this.z=parseInt(arg3);    
+    }
+    var cubo = {
+        volumen: function(){
+            return this.x * this.y * this.z;
+        },
+        area: function() {
+            return this.x * this.y;
+        }
+    };
+
+    var cubo1 = new creaCub(1,2,3);
+    var cubo2 = new creaCub(4,3,56);
+    var cubo3 = new creaCub(12,32,53);
+    var cubo4 = new creaCub(9,6,4);
+    var cubo5 = new creaCub(67,67,67);
+
+    var cuboConMayorVolumen = (myFunction(cubo1,cubo2,cubo3,cubo4,cubo5))+1;
+    //document.getElementById("demo").innerHTML = "El mayor cubo es: " + cuboConMayorVolumen;
+    document.getElementById("demo").innerHTML = "El mayor cubo es :"+ cuboConMayorVolumen;
+
+    function myFunction (){
+        var volMax=0, vol=1, j, k, area;
+        for (var i = 0; i< arguments.length; i++){
+            console.log("Volumen "+(i+1)+"-->"+cubo.volumen.call(arguments[i]));
+            vol = cubo.volumen.call(arguments[i]);
+            area= cubo.area.call(arguments[i]);
+            console.log("Area "+(i+1)+"-->"+ cubo.area.call(arguments[i]));
+            if(vol >volMax){
+                volMax=vol;
+                j=i;
+            }
+
+
+        }
+        return j;
+    }
+
+
+
+</script>
+
+
+
+</body>
+</html>
