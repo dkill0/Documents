@@ -1,5 +1,15 @@
+body {
+	font-family: Arial, Hevetica, Vernada, sans-serif;
+	color: #000;
+	
+}
+
+
 table.tabla01 {
 	background-color: #ededed;
+	text-align: center;
+	border: 1px solid #9e9e9e;
+	
 	 
 	
 }
@@ -10,8 +20,11 @@ tr.bgcolor01 {
 
 table.tabla01 th {
 	background-color: #7c7c7c;
+	color: #fff;
 }
 
 table.tabla01 th, table.tabla01 td {
 	border-bottom: 1px dashed #9e9e9e;
+	
 }
+

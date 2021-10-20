@@ -1,0 +1,16 @@
+body{
+
+	font-family: Arial, Helvetica, Verdana;
+	font-size: 0.8em;
+	color: #000;
+}
+ 
+
+p.texto1{
+	text-decoration: underline;
+}
+
+p.texto2{
+	text-decoration: line-through;
+	line-height: 2em;
+}

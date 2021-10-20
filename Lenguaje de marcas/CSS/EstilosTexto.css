@@ -1,0 +1,13 @@
+body{
+
+	font-family: Arial, Helvetica, Verdana;
+	font-size: 0.8em;
+	color: #000;
+}
+	p.p1{
+	font-style: italic;
+}
+
+p.p2{
+	font-style: oblique;
+}

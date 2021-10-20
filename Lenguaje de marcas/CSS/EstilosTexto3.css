@@ -1,0 +1,22 @@
+ody{
+
+	font-family: Arial, Helvetica, Verdana;
+	font-size: 0.8em;
+	color: #000;
+}
+ 
+
+div p {
+	background-color: #e7e7e7;
+	margin: 20px;
+	margin-top: 40px;
+	padding: 20px;
+	padding-left: 40px;
+}
+
+
+
+div.capa01{
+	border: 1px solid #000;
+}
+
