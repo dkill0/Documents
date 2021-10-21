@@ -1,0 +1,34 @@
+body {
+	font-family: Arial, Verdana, sans-serif;
+	text-align: center;
+}
+
+p.abrev{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+p.largo{
+	font-style: italic;
+}
+p.horas{
+	font-size: 0.8em;
+}
+div.caja {
+	
+	border: 1px solid #000;
+	margin:10px;
+	width: 200px;
+	float: left;
+}
+div.victor {
+	background-color: blue;
+	border-color: red;
+	color: white;
+}
+
+div.fernando {
+	background-color: red;
+	border-color: blue;
+	color: white;
+}

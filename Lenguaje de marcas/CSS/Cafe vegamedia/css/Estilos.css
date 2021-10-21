@@ -1,0 +1,27 @@
+body {
+	font-family:Cambria, Arial, Times;
+	font-size: 12pt;
+}
+h1 {font-size: 1.4em;}
+h2 {font-size: 1.2em;}
+
+figcaption{
+	font-size: 0.8em;
+	font-style: italic;
+	color: #984a0b;
+}
+/*Estilos id para los bloques de producto*/
+div#bloque1{
+	width: 358px;
+	border: 1px solid #984a0b;
+	margin: 10px;
+	padding: 10px;
+	float: left;
+}
+div#bloque2{
+		width: 358px;
+	border: 1px solid #984a0b;
+	margin: 10px;
+	padding: 10px;
+	float: left;
+}
