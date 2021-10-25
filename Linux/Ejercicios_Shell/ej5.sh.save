@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ test "$1" = "$2" ] 
+then
+	echo "La palabra es igual" else#!/bin/bash for var in * echo "La 
+palabra es distinta" fi do echo $var if test -f "$var" then
+	echo "Es un fichero regular" elif test -d "$var" then echo "Es un 
+	directorio"
+else echo "no es ni fichero ni directorio" fi
+done

@@ -1,6 +1,7 @@
 #!bin/bash
 echo "Quien esta conectado: "
-quien=`who`
+quien=`whoami`
+#who|cut -d" " -f1
 echo $quien
 echo "Directorio actual: "
 direct=`pwd`
