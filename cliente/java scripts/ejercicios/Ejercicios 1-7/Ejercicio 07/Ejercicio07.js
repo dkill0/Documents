@@ -15,7 +15,7 @@ while(count!=3){
 		alert('Es par');
 		num1 = parseInt(prompt('Introduce un numero'));
 	}
-	
+}
 	
 /*Al terminar el bucle, el ultimo numero no alerta de si es par o no, asi que se añade una alerta
 al salir del bucle, ya que solo sale cuando se introduce un tercer numero par*/

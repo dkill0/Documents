@@ -48,6 +48,9 @@ switch (letra) {
   case 'D':
     day = "Fin de semana";
     break;
+default:
+		day="No es un dia de la semana";
+		break;
 }
 //Alerta que imprime el tipo de día
 alert(day);	
