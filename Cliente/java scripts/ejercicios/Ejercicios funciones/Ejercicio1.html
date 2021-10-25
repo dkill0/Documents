@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="txt"></div>
+    <script>
+  function startTime() {
+  var today = new Date();
+  var d = today.getDay();
+  var m = today.getMonth();
+  var a = today.getFullYear();
+ 
+  d = menorQue10(d);
+  m = menorQue10(m);
+  document.getElementById("txt").innerHTML = d + ":" + m + ":" + a;
+  var t = setTimeout(function(){ startTime() });
+}
+ // añadir un 0 delante de los numeros menores que 0
+function menorQue10(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
+    </script>
+</body>
+</html>

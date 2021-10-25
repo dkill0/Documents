@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Funcion que coge una cantidad de parametros indefinida y guarda en otro array los numeros pares
+        function pares() {
+           let parAr = new Array();
+           let indiceArray = 0;
+            for(let i = 0; i<arguments.length; i++){
+                if(arguments[i]%2==0){
+                    parAr[indiceArray]=arguments[i];
+                    indiceArray++;
+                }
+            }
+            return parAr;
+            
+        }
+        //Se calcula la longitud del array resultante de la funcion
+        let a = pares(3,4,8,92,3).length;
+        let b = pares(3,4,8).length;
+       console.log(a);
+       console.log(b);
+
+    </script>
+</body>
+</html>

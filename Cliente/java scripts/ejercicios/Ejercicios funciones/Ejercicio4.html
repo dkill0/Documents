@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Declaracion de la clase
+        class Cubo{
+            constructor (arg1, arg2, arg3){
+                this.x=parseInt(arg1);
+                this.y=parseInt(arg2);
+                this.z=parseInt(arg3);
+            }
+            get volumen(){
+                return this.x * this.y * this.z;
+            }
+        }
+        // Definicion de funciones que usa el objeto
+        function maxVolumen(){
+           var volMax = 0, vol = 1, j;
+           for(var i = 0; i < arguments.length; i++){
+               vol = arguments[i].volumen;
+               if(vol > volMax){
+                   volMax = vol;
+                   j = i;
+               }
+           }
+           return j;
+        }
+
+        // Creacion de objetos
+        var cubo1 = new Cubo(61,23,32);
+        var cubo2 = new Cubo(63,52,17);
+        var cubo3 = new Cubo(19,72,35);
+        var cubo4 = new Cubo(33,22,11);
+        var cubo5 = new Cubo(13,25,34);
+        var cubo6 = new Cubo(35,24,14);
+        // Se crean distintas pruebas para confirmar la entrada de parametros
+
+        // 6 argumentos
+        var cuboMayorVolumen= (maxVolumen(cubo1, cubo2, cubo3, cubo4, cubo5, cubo6))+1;
+        console.log("El mayor cubo es: " + cuboMayorVolumen);
+        // 4 argumentos
+        var cuboMayorVolumen= (maxVolumen(cubo3, cubo4, cubo5, cubo6))+1;
+        console.log("El mayor cubo es: " + cuboMayorVolumen);
+        // 2 argumentos
+        var cuboMayorVolumen= (maxVolumen(cubo5, cubo6))+1;
+        console.log("El mayor cubo es: " + cuboMayorVolumen);
+
+
+    </script>
+</body>
+</html>
