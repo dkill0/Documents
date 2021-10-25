@@ -1,0 +1,164 @@
+*{
+		margin: 0 auto;
+		padding: 5px;
+}
+
+header{
+	width: 900px;
+	background-color: #92B355;
+	color: #000000;
+	padding: 4px;
+	margin-bottom: 4px;
+}
+
+body {
+	font-family:Cambria, Arial, Times;
+	font-size: 12pt;
+	width: 900px;
+}
+
+h1 {font-size:2em;}
+
+figcaption{
+	font-size: 0.8em;
+	font-style: italic;
+	color: #000000;
+}
+
+img.cabecero{
+	width: 880px;
+}
+
+article.articuloIndex {
+	width: 500px;
+	border: 1px solid #000000;
+	margin: 10px;
+	float: left;
+}
+
+article header{
+	width: 450px;
+	margin: 0px;
+}
+
+article.articuloIndex header h1{
+	border-bottom: 1px solid #000000;
+	font-size:1.4em;
+	
+}
+
+section {
+	width: 550px;
+	margin-right: 20px;
+	float: left;
+}
+
+section article {
+	width: 550px;
+	float: left;
+	background-color: #92B355;
+	margin-bottom: 4px;
+	margin-top: 4px;
+	padding: 4px;
+}
+
+aside {
+	width: 300px;
+	float: left;
+}
+
+aside div.asideIndex {
+	border: 1px solid #000000;
+	margin-bottom: 10px;
+	margin-top: 4px;
+	background-color: #C4E3A1;
+	padding: 4px;
+	float: left;
+}
+
+footer{
+	width: 880px;
+	padding: 4px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background-color: #000000;
+	color: #ffffff;
+	clear: both;
+}
+article footer {
+	background-color: #512504;
+	color: #ffffff;
+	width: 542px;
+	padding: 4px;
+}
+
+nav ul {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	float:left;
+}
+
+nav ul li {
+	display: block;
+	float: left;
+	padding: 5px 95px;
+	margin-right: 8px;
+	margin-bottom: 4px;
+	margin-top: 4px;
+	border-top: 1px solid #000000;
+	border-bottom: 2px solid #000000;
+	float:left;
+
+}
+
+nav ul li a {
+	text-decoration: none;
+	font-family: Arial;
+	font-weight: bold;
+	text-transform: capitalize;
+	color: #000000;
+	padding: 4px;
+	
+}
+
+nav ul li:hover, nav ul li a:hover{
+	color: #ffffff;
+	background: #000000;
+}
+
+#parrafoAside{
+	font-size: 1.2em;
+}
+
+section.sectionOferta article{
+	background-color: #ffffff;
+}
+
+section.sectionOferta article table tbody tr th, section.sectionOferta article table thead tr th,
+section.sectionOferta article table tfoot tr th{
+	border: 1px solid #000000;
+	background-color: #92B355;
+	
+}
+
+article ul{
+	padding-left:20px
+}
+
+caption{
+	font-size: 2em;
+	margin-top: 20px;
+
+}
+
+section.sectionInsta{
+	width:800px;
+	margin-left: 130px;
+} 
+
+section.sectionInsta figure{
+	width: 300px;
+	float: left;
+	
+}
