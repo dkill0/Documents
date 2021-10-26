@@ -7,43 +7,42 @@
     <title>Document</title>
 
     <script>
-        var cadena=document.getElementById("cadena");
-        
-        var palabra=document.getElementById("palabra");
-        
-
-        var palabra1 = palabra.toLowerCase();
-        var cadena1 = cadena.toLowerCase();
-        
+      
        
-        function contarPalabra(){
-            var str = cadena1.split(" ");
+        function contarPalabra(){     
+            var cadena1 = document.getElementById("cadena").value;      
+            var palabra1 = document.getElementById("palabra").value;
+            
             var cont = 0;
-        for(var i = 0; i<str.length;i++){
-         if(str[i].indexOf(palabra1)!=-1){
-                cont++;
+            var palabra2 = palabra1.toLowerCase();
+            var cadena2 = cadena1.toLowerCase();
+            var str = cadena2.split(" ");
+            
+            for(var i = 0; i<str.length ; i++){
+            if(str[i]==palabra2){
+                    cont++;
+                }
             }
-        
-       }
-
-       console.log(cont);
-        document.getElementById("resultado").innerHTML=cont;
+            console.log(cont);
+            document.getElementById("resultado").innerHTML=cont;
         }
        
-          
-     
+      
 
 
     </script>
 </head>
 <body>
    
-   
- <input id="cadena" type="text" maxlength="10" size="15">
+<p>Introduce una cadena</p>
+ <input id="cadena" type="text" maxlength="45" size="50">
  <br>
- <input id="palabra" type="text" maxlength="10" size="15">
- <br>
+ <p>Introduce una palabra</p>
+
+ <input id="palabra" type="text" maxlength="45" size="50">
+ <br><br>
  <button style="width: 20%" onclick="contarPalabra()">Encontrar coincidencias</button>
+ 
   
 <p id="resultado">0</p>
 
