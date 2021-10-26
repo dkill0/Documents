@@ -5,3 +5,21 @@ body{
 	margin: auto;
 	color: #ffffff;
 }
+
+#principal {
+	display:block;
+	width: 884px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #4d2612;
+	-moz-border-radius: 20px 0px 20px 0px;
+	-webkit-border-radius: 20px 0px 20px 0px;
+	border-radius: 20px 0px 20px 0px;
+	-moz-box-shadow: 4px 4px 5px rgba(169, 108,53,0.5) inset;
+	-webkit-box-shadow: 4px 4px 5px rgba(169, 108,53,0.5) inset;
+	box-shadow: 4px 4px 5px rgba(169, 108,53,0.5) inset;
+}
+#titulo{
+	text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+}
