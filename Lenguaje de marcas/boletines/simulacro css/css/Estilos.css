@@ -143,7 +143,7 @@ section.sectionOferta article table tfoot tr th{
 }
 
 article ul{
-	padding-left:20px
+	padding-left:20px;
 }
 
 caption{
@@ -151,14 +151,15 @@ caption{
 	margin-top: 20px;
 
 }
-
 section.sectionInsta{
-	width:800px;
-	margin-left: 130px;
-} 
+	width:900px;
+}
 
-section.sectionInsta figure{
+div.caja{
 	width: 300px;
+	
+	padding: 5px;
+	margin: 5px;
 	float: left;
 	
 }
