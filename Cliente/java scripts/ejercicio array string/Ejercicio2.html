@@ -8,16 +8,19 @@
 
     <script>
       
-       
+       //Funcion que cuenbta las veces que coincide la palabra en la cadena de caracteres introducida
         function contarPalabra(){     
             var cadena1 = document.getElementById("cadena").value;      
             var palabra1 = document.getElementById("palabra").value;
             
             var cont = 0;
+            //los transformo a minusculas para que no sea sensible a mayusculas o minusculas
             var palabra2 = palabra1.toLowerCase();
             var cadena2 = cadena1.toLowerCase();
+            //Separo la cadena original para ir comprobando palabra por palabra
             var str = cadena2.split(" ");
             
+            //Cuenta las veces que aparece la palabra en la cadena
             for(var i = 0; i<str.length ; i++){
             if(str[i]==palabra2){
                     cont++;
