@@ -1,0 +1,3 @@
+echo ls - aparece el ls normal
+echo "ls" - ls normal
+echo `ls` - se ejecuta
