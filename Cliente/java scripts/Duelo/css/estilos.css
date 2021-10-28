@@ -4,7 +4,7 @@
 body{
     font-family: Arial;
     font-size: 12pt;
-    background-image: url(./img/fondoChloe.jpg);
+    background-image: url("../img/fondoChloe.jpg");
 }
 header{
     padding-top:10px;

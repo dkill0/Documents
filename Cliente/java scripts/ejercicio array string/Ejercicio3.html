@@ -14,8 +14,22 @@
             var cadena2 = "";
         
             for (let i = 0; i < cadena.length; i++) {
+                if(cadena.charAt(i)>='a' && cadena.charAt(i)<='z'){
                     var caracter=(cadena.charCodeAt(i) + clave);
-                    cadena2 = cadena2 + String.fromCharCode(caracter);       
+                    if (cadena.charAt(caracter)>'z') {
+                        caracter = caracter -26;
+                    }
+                    cadena2 = cadena2 + String.fromCharCode(caracter);
+                }else if(cadena.charAt(i)>='A' && cadena.charAt(i)<='Z'){
+                    var caracter=(cadena.charCodeAt(i) + clave);
+                
+                if (caracter>'Z') {
+                        caracter = caracter -26;
+                    }
+                    cadena2 = cadena2 + String.fromCharCode(caracter);    
+                }else{
+                    cadena2=cadena2+cadena.charAt(i);
+                }
             }
             
             document.getElementById("resultado").innerHTML= cadena2;
