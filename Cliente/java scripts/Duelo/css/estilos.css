@@ -42,7 +42,7 @@ div.izq{
     margin-top:15px;
     clear:left;
 }
-div p#nombre{
+div p{
     padding:15px;
 }
 article.izq{
@@ -58,6 +58,10 @@ figure{
     
     margin:0px;
     padding:0px;
+}
+img{
+    width: 45px;
+    height: 45px;
 }
 div.der figure{
     border-right:1px solid black;
