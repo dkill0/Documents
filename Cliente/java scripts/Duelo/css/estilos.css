@@ -62,10 +62,17 @@ figure{
 img{
     width: 45px;
     height: 45px;
+    
+}
+img:hover{
+    -moz-transform: translateX(120px) translateY(0) scaleX(8.0) scaleY(8.0);
+    -webkit-transform: translateX(120px) translateY(0) scaleX(8.0) scaleY(8.0);
 }
 div.der figure{
     border-right:1px solid black;
     float:left;
+ 
+
 }
 div.izq figure{
     border-left:1px solid black;
@@ -84,12 +91,24 @@ button{
 div.izq span {
     float:left;
     color:  black;
-    background-color:white; 
+    background-color: white;
+    border-right: 1px solid black;
+    border-bottom:1px solid black ;
+    -moz-border-radius: 0px 0px 10px 0px;
+    -webkit-border-radius: 0px 0px 10px 0px;
+    border-radius: 0px 0px 10px 0px;
+  
 }
 div.der span {
     float:right;
     color:  black;
-    background-color:white; 
+    background-color: white;
+    border-left: 1px solid black;
+    border-bottom:1px solid black ;
+    -moz-border-radius: 0px 0px 0px 10px;
+    -webkit-border-radius: 0px 0px 0px 10px;
+    border-radius: 0px 0px 0px 10px;
+ 
 }
 
 div#C1{
