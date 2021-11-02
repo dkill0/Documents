@@ -22,7 +22,8 @@
     var pet16= new creaPet("Nala ","&nbsp;Michi&nbsp;","./img/nala.jpeg");
     var mascotas = [pet1, pet2, pet3, pet4, pet5, pet6, pet7, pet8, pet9, pet10, pet11, pet12, pet13, pet14, pet15, pet16];
     
-    var conta=0;
+    var conta=1;
+    var conta2=2;
     
     function Aleatorio() {
         var aleatorio;
@@ -34,7 +35,6 @@
         }else{
             aleatorio=0;
         }
-        console.log(aleatorio);
         return aleatorio;
     }
     
@@ -44,10 +44,12 @@
         var imagen ="imagen"
         
       
-        var numMasc= Aleatorio();
-        conta=conta+1;
+        var numMasc1= Aleatorio();
+     console.log(numMasc1);
         
-      
+   
+        
+        console.log(conta);
             
         nombreMasc= nombreMasc + (conta);
         razaMasc= razaMasc + (conta);
@@ -55,23 +57,46 @@
         
         console.log(nombreMasc);
         
-        console.log[mascotas];
-        document.getElementById(nombreMasc).innerHTML = mascotas[numMasc].nom;
-        document.getElementById(razaMasc).innerHTML = mascotas[numMasc].raza;
-        document.getElementById(imagen).src = mascotas[numMasc].img;
-        mascotas.splice((numMasc),1);
-        /*if(nombreMasc==="nombre16"){
-            const button = document.querySelector('button');
-            button.disabled = true;
-            
-        }*/
-           
+      
+        document.getElementById(nombreMasc).innerHTML = mascotas[numMasc1].nom;
+        document.getElementById(razaMasc).innerHTML = mascotas[numMasc1].raza;
+        document.getElementById(imagen).src = mascotas[numMasc1].img;
+        mascotas.splice(numMasc1,1);
+        conta+=2;
+
+
+
+        var numMasc2= Aleatorio();
+     
+      
+        var nombreMasc="nombre";
+        var razaMasc="raza";
+        var imagen ="imagen"
+        console.log(numMasc2);
+        
+        nombreMasc= nombreMasc + (conta2);
+        razaMasc= razaMasc + (conta2);
+        imagen=imagen + conta2;
+        console.log(conta2);
+        
+        console.log(nombreMasc);
+        
+       
+
+        document.getElementById(nombreMasc).innerHTML = mascotas[numMasc2].nom;
+        document.getElementById(razaMasc).innerHTML = mascotas[numMasc2].raza;
+        document.getElementById(imagen).src = mascotas[numMasc2].img;
+        mascotas.splice(numMasc2,1);
+        
+        conta2+=2;
+
            
     }
    
     function reiniciar(){
        
-       conta=0;
+       conta=1;
+       conta2=2;
     
         var nombreMasc="nombre";
         var razaMasc="raza";
@@ -89,16 +114,13 @@
       
         
     }
-
-    var ts;
-    var tm;
     var s=0;
     var m=0;
     function startTime() {
         
-        ts = parseInt(setInterval(segundos(), 1000));
-        tm = parseInt(setInterval(minutos(),60000));
-        document.getElementById("contador").innerHTML = tm + ts;
+        var ts = parseInt(setInterval(segundos(), 1000));
+        var tm = parseInt(setInterval(minutos(),60000));
+        document.getElementById("contador").innerHTML = tm + ":"+ ts;
      
       }
       
