@@ -28,66 +28,44 @@
     function Aleatorio() {
         var aleatorio;
         if(mascotas.length>0){
-            aleatorio = Math.floor(Math.random() * (mascotas.length));
-            
-            
-            console.log(mascotas.length);
+            aleatorio = Math.floor(Math.random() * (mascotas.length));    
         }else{
             aleatorio=0;
         }
         return aleatorio;
     }
     
+
     function genera() { 
+        var numMasc1= Aleatorio();
         var nombreMasc="nombre";
         var razaMasc="raza";
         var imagen ="imagen"
-        
-      
-        var numMasc1= Aleatorio();
-     console.log(numMasc1);
-        
-   
-        
-        console.log(conta);
-            
+
         nombreMasc= nombreMasc + (conta);
         razaMasc= razaMasc + (conta);
         imagen=imagen + conta;
-        
-        console.log(nombreMasc);
-        
-      
+          
         document.getElementById(nombreMasc).innerHTML = mascotas[numMasc1].nom;
         document.getElementById(razaMasc).innerHTML = mascotas[numMasc1].raza;
         document.getElementById(imagen).src = mascotas[numMasc1].img;
         mascotas.splice(numMasc1,1);
         conta+=2;
 
-
-
         var numMasc2= Aleatorio();
-     
-      
         var nombreMasc="nombre";
         var razaMasc="raza";
         var imagen ="imagen"
-        console.log(numMasc2);
+        
         
         nombreMasc= nombreMasc + (conta2);
         razaMasc= razaMasc + (conta2);
         imagen=imagen + conta2;
-        console.log(conta2);
-        
-        console.log(nombreMasc);
-        
-       
 
         document.getElementById(nombreMasc).innerHTML = mascotas[numMasc2].nom;
         document.getElementById(razaMasc).innerHTML = mascotas[numMasc2].raza;
         document.getElementById(imagen).src = mascotas[numMasc2].img;
         mascotas.splice(numMasc2,1);
-        
         conta2+=2;
 
            
@@ -102,35 +80,40 @@
         var razaMasc="raza";
         var imagen ="imagen"
         mascotas = [pet1, pet2, pet3, pet4, pet5, pet6, pet7, pet8, pet9, pet10, pet11, pet12, pet13, pet14, pet15, pet16];
+        
         for (let i = 1; i < 17; i++) {
-        
-        
         document.getElementById(nombreMasc+i).innerHTML ="??????";
         document.getElementById(razaMasc+i).innerHTML = "?????";
         document.getElementById(imagen+i).src = "./img/huella.jpg";
-            
-        }
-        
-      
-        
+        }   
+        clearInterval(contador);
+        s=0;
+        m=0;
+        s1="0";
+        contador = setInterval(startTime, 1000);
     }
-    var s=0;
-    var m=0;
+
+    var s = 0;
+    var m = 0;
+    var s1="0";
+    var contador = setInterval(startTime, 1000);
+   
     function startTime() {
-        
-        var ts = parseInt(setInterval(segundos(), 1000));
-        var tm = parseInt(setInterval(minutos(),60000));
-        document.getElementById("contador").innerHTML = tm + ":"+ ts;
-     
-      }
-      
-      function segundos() {
-      s = s+1;
-      }
-      function minutos() {
-        m = m+1;
+        document.getElementById("contador").innerHTML = m + ":" +s1 + s;
+        s = s+1;
+        if(s>=60){
+            s = 1;
+            m = m +1;
         }
+        if(s<10){
+            s1 = "0";
+        }
+        else{
+            s1="";
+        }  
+      }
       
+
     
 
 
