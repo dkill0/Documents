@@ -35,7 +35,8 @@
         return aleatorio;
     }
     
-
+   
+   
     function genera() { 
         var numMasc1= Aleatorio();
         var nombreMasc="nombre";
@@ -68,11 +69,19 @@
         mascotas.splice(numMasc2,1);
         conta2+=2;
 
-           
+        if (nombreMasc==="nombre16") {
+            document.getElementById('video').src = "video/tata.mp4"
+            document.getElementById('audio').src = "audio/jota.mp3"
+            /*let button = document.querySelector("genera");
+            button.disabled = true;*/
+        }
+            
+        
     }
    
     function reiniciar(){
-       
+        document.getElementById('video').src = "";
+        document.getElementById('audio').src = "";
        conta=1;
        conta2=2;
     

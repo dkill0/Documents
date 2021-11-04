@@ -123,3 +123,12 @@ div#C3{
 div#C4{
     background-color: #D6A42E;
 }
+
+video#video{
+    float: left;
+    margin-top: 90px;
+    margin-left: 150px;
+    width:300;
+    height:300;
+    
+}
