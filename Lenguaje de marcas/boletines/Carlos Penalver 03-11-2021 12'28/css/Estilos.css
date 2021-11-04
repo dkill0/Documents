@@ -1,0 +1,168 @@
+*{
+	margin: 5px auto;
+
+}
+body{
+	font-family: MiFuente, Arial;
+	width: 1100px;
+}
+header {
+	width: 1100px;
+	
+}
+article header{
+	background-color: black;
+	color: white;
+	width: 790px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+aside header{
+	text-align: center;
+	background-color: black;
+	color: white;
+	width: 259px;
+}
+nav ul {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	float:left;
+
+}
+
+nav ul li {
+	display: block;
+	float: left;
+	padding: 8px 100px;
+	float:left;
+	
+	background-color: #000000;
+
+}
+
+nav ul li a {
+	text-decoration: none;
+	font-family: Arial;
+	font-weight: bold;
+	text-transform: capitalize;
+	color: #ffffff;
+	padding: 4px;
+	
+	
+}
+
+nav ul li:hover, nav ul li a:hover{
+	color: #000000;
+	background: #ffffff;
+}
+
+section {
+	margin: 0px;
+	width: 800px;
+	float: left;
+}
+article{
+	border: 1px solid black;
+	background-color: #EBEBEB;
+	margin-bottom: 20px;
+}
+aside{
+	margin-left: 20px;
+	width: 260px;
+	float: left;
+	border: 1px solid black;
+	background-color: #EBEBEB;
+	color: black;
+	
+}
+aside img {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+footer{
+	clear: both;
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+
+article img{
+	margin: 0px;
+	width: 790px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+p {
+	margin-left: 10px;
+	line-height : 20px;
+}
+
+section.multimedia {
+	width: 1100px;
+}
+div{
+	width: 300px;
+	float: left;
+	text-align: center;
+	padding: 30px;
+}
+iframe{
+	width:300px;
+	height:170px;
+}
+section.horario{
+	width: 1100px;
+}
+table {
+	width: 1100px;
+	border: 1px solid black;
+	text-align: center;
+	background-color: #EAEAEA;
+}
+td{
+	border: 1px solid black;
+}
+th {
+	background-color: black;
+	color: white;
+	margin: 0px;
+	padding: 0px;
+	height:30px;
+}
+
+aside.contacto{
+	background-color: black;
+	color:white;
+}
+input.enviar{
+	width: 200px;
+	height: 40px;
+	border: 1px solid #DDDDDD;
+	-moz-box-shadow: 4px 4px 5px rgba(0, 0,0,0.5);
+	-webkit-box-shadow: 4px 4px 5px rgba(0, 0,0,0.5);
+	box-shadow: 4px 4px 5px rgba(0, 0,0,0.5);
+}
+input{
+	border: 1px solid #DDDDDD;
+	width: 750px;
+	height: 40px;
+	margin-left: 10px;
+	-moz-border-radius:5px 5px;
+	-webkit-border-radius:5px 5px;
+	border-radius: 5px 5px;
+}
+textarea{
+	margin-left: 10px;
+	border: 1px solid #DDDDDD;
+	width: 750px;
+	border: 1px solid #DDDDDD;
+	-moz-border-radius:5px 5px;
+	-webkit-border-radius:5px 5px;
+	border-radius: 5px 5px;
+}
+@font-face{
+	font-family: 'MiFuente';
+	src: url('src: url('./font/.ttf');');
+}
