@@ -7,10 +7,13 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="demo"></p>
     <script>
-        var d = new Date(0);
-        document.getElementById("demo").innerHTML = d;
-        </script>
+        var d = new Date();
+        var c = d.getTime();
+        document.getElementById("demo").innerHTML = c;
+     </script>
+     
     
 </body>
 </html>
