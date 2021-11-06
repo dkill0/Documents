@@ -72,8 +72,7 @@
         if (nombreMasc==="nombre16") {
             document.getElementById('video').src = "video/tata.mp4"
             document.getElementById('audio').src = "audio/jota.mp3"
-            /*let button = document.querySelector("genera");
-            button.disabled = true;*/
+           
         }
             
         
