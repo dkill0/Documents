@@ -9,16 +9,16 @@
     var pet3 = new creaPet("Zoro","&nbsp;Michi&nbsp;","./img/zoro.jpg");
     var pet4 = new creaPet("Amy","&nbsp;Michi&nbsp;","./img/amy.jpeg");
     var pet5 = new creaPet("Perse","&nbsp;Perra&nbsp;","./img/perse.jpeg");
-    var pet6 = new creaPet("Aza","&nbsp;Michi&nbsp;","./img/huella.jpg");
+    var pet6 = new creaPet("Aza","&nbsp;Michi&nbsp;","./img/aza.jpeg");
     var pet7 = new creaPet("Rizos","&nbsp;Michi&nbsp;","./img/rizos.jpeg");
-    var pet8 = new creaPet("Porro","&nbsp;Pez&nbsp;","./img/huella.jpg");
+    var pet8 = new creaPet("Porro","&nbsp;Pez&nbsp;","./img/porro.jpeg");
     var pet9 = new creaPet("Luna","&nbsp;Perra&nbsp;","./img/tata.jpeg");
     var pet10= new creaPet("Siri Pequeña ","&nbsp;Michi&nbsp;","./img/sirip.jpeg");
     var pet11= new creaPet("Siri Awela ","&nbsp;Michi&nbsp;","./img/awela.jpeg");
     var pet12= new creaPet("Princesa O. ","&nbsp;Michi&nbsp;","./img/princesa.jpeg");
     var pet13= new creaPet("Mandarina ","&nbsp;Michi&nbsp;","./img/mandi.jpeg");
     var pet14= new creaPet("Luisito ","&nbsp;Michi&nbsp;","./img/luiso.jpeg");
-    var pet15= new creaPet("Cattana ","&nbsp;Michi&nbsp;","./img/huella.jpg");
+    var pet15= new creaPet("Cattana ","&nbsp;Michi&nbsp;","./img/cattana.jpeg");
     var pet16= new creaPet("Nala ","&nbsp;Michi&nbsp;","./img/nala.jpeg");
     var mascotas = [pet1, pet2, pet3, pet4, pet5, pet6, pet7, pet8, pet9, pet10, pet11, pet12, pet13, pet14, pet15, pet16];
     
