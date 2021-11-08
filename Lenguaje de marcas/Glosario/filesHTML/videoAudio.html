@@ -1,0 +1,35 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Audio y video</title>
+	</head>
+	<body>
+		<h1>Audio y video</h1>
+		
+		<a href="..\index.html">Inicio</a>
+		<br><br>
+		<h3>Video</h3>
+		<p>Cargar un video desde el ordenador: <br>
+		contros: muestra los controles del video <br>
+		autoplay: fuerza la reproduccion en el navegador<br>
+		loop: reproduce un video en bucle<br>
+		poster: muestra una imagen previa mientras el video carga<br>
+		preload: gestiona la cache tomando estos valores --> auto(se descarga cuanto antes);none(el video no debe ser cacheado);metadata(trata de obtener informacion sobre la fuente);
+		</p>
+		<h3>Audio</h3>
+		<p>Se puede añadir un audio con los mismos atributos k el video y si no estas seguro de que se pueda reproducir puedes añadir varios source</p>
+		
+		
+		<textarea rows="30" cols="30"><video id="video" src="" autoplay loop></video>
+				-----------------------------------------
+				<audio src="media/musica.mp3" controls></audio>
+				-----------------------------------------
+				<audio controls>
+					<source src="media/musica.mp3">
+					<source src="media/musica.ogg">
+				</audio>
+		
+		
+		</textarea>
+	</body>
+</html>

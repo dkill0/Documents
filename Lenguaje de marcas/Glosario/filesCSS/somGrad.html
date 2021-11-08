@@ -1,0 +1,51 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Sombras y Gradientes</title>
+	</head>
+	<body>
+		<h1>Sombras y Gradientes</h1>
+		
+		<a href="..\index.html">Inicio</a>
+		<br><br>
+		<h2>Sombras</h2>
+		
+		<p>En el primer ejemplo: <br>Los primeros dos pixeles establecen el desplazamiento (horizontal - vertical). Pueden ser positivos o negativos<br>
+		El tercer valor indica el difuminado<br>
+		El cuarto valor es el color.<br>
+		El 0.5 se refiere a la transparecia</p>
+		
+		<p>En el segundo ejemplo: <br>
+		Crea sombras para figuras irregulares<br>
+		Se puede añadir más de una sombra, lo que permite crear efectos espectaculares. Por ejemplo:<br>
+text-shadow: 10px 8px #ccf, -10px 12px #fcf, -8px -12px #cfc</p>
+		
+		
+		
+		<p>Poner <strong>inset</strong> fuera del parentesis (0,0,0) inset; hace que la sombra se vuelva interna</p>
+		<textarea rows="20" cols="40">-moz-box-shadow: 4px 4px 5px rgba(0, 0,0,0.5);
+									-webkit-box-shadow: 4px 4px 5px rgba(0, 0,0,0.5);
+									box-shadow: 4px 4px 5px rgba(0, 0,0,0.5);
+		
+							-------------------------
+									text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+
+		</textarea>
+		
+		<h2>Gradientes</h2>
+		
+		<p>Para su declaración se utiliza la función “linear-gradient” que tiene como atributos la
+posición de inicio, el color inicial y el color final usados para crear el gradiente. El valor de la posición puede
+ser especificado en píxeles, porcentaje o usando las palabras clave “top”, “bottom”, “left” y “right”.</p>
+
+<p>La sintaxis estándar para los gradientes radiales solo difiere en unos pocos aspectos con respecto a la
+anterior. Debemos usar la función radial-gradient() y un nuevo atributo para la forma:</p>
+			<textarea rows="20" cols="40">background: -webkit-linear-gradient(top, #a96c35, #4d2612);
+										background: -moz-linear-gradient(top, #a96c35, #4d2612);
+		
+							-------------------------
+										background: radial-gradient(center, circle, #FFFFFF 0%, #006699 200%);		
+
+			</textarea>
+	</body>
+</html>

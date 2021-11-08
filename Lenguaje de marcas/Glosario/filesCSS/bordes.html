@@ -1,0 +1,30 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Bordes</title>
+	</head>
+	<body>
+		<h1>Bordes</h1>
+		
+		<a href="..\index.html">Inicio</a>
+		<br><br>
+		<p>Si todas las esquinas toman la misma curvatura podemos usar el mismo valor.</p>
+		<p>El primer ejemplo el primer 5px se refiere a la superior izquierda-inferior derecha y el segundo a superior derecha-inferior izquierda</p>
+		<p>El segundo ejemplo son todas las esquinas en el orden de las agujas del reloj: superior izquierda-superior derecha-inferior derecha-inferior izquierda</p>
+		<p>En el tercer ejemplo los valores a la izquierda de la barra representarán el radio horizontal mientras que los valores a
+la derecha representan el radio vertical. La combinación de estos valores genera una elipse.</p>
+		<textarea rows="40" cols="40">-moz-border-radius:5px 5px;
+							-webkit-border-radius:5px 5px;
+							border-radius: 5px 5px;
+		
+							-------------------------
+							-moz-border-radius:5px 0px 5px 0px;
+							-webkit-border-radius:5px 0px 5px 0px;
+							border-radius: 5px 0px 5px 0px;
+							-------------------------
+							-moz-border-radius: 5px / 0px;
+							-webkit-border-radius: 5px / 0px;
+							border-radius: 5px / 0px;
+		</textarea>
+	</body>
+</html>
