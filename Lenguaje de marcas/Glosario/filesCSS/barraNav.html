@@ -52,9 +52,32 @@
 		<p>Primero se definen los estilos al nivel de etiqueta ul: <br>
 		nav ul {}
 		Se utilizan atributos como list-style, text-align, float y padding entre otros.
+		<br><br>Continuamos a nivel de etiqueta elementos “li”, es decir, cada elemento de la lista. Mediante la
+		propiedad “display” en modo bloque establecemos el tipo de caja para estos elementos, y con la propiedad
+		“float” a la izquierda los distintos elementos se irán agrupando uno al lado de otro para formar el esquema
+		final.
+		<br><br>
+		Para finalizar, a cada vínculo de la lista (es decir, las etiquetas tipo “a”) les eliminamos la decoración y
+		le asignamos una tipografía. Además, mediante la propiedad “text-transform”, indicamos que el texto se
+		transforme en mayúsculas (“text-transform” admite los valores: “uppercase”, “lowercase”, “capitalize” o
+		“none”).
+		<br><br>
+		Por último, mediante la pseudo-clase “hover” creamos un estilo que actuará cuando situemos el ratón
+		sobre el elemento.
+
+		Las pseudo-clases :hover, :active, :link y :visited permiten al diseñador modificar el estilo de un
+		elemento cuando el usuario realice una acción sobre el mismo. A continuación, se indican las acciones del
+		usuario que activan cada pseudo-clase:<br>
+		<ul>
+			<li>:link. se aplica a todos los vínculos que todavía no han sido visitados por el usuario.</li>
+			<li>:visited, se aplica a todos los vínculos que han sido visitados al menos una vez por el usuario.</li>
+			<li>:hover, el estilo creado se activa cuando el usuario sitúa el ratón encima de un elemento.</li>
+			<li> :active, el estilo creado se activa cuando el usuario pulsa con el ratón sobre un elemento. Se aplica
+		durante un espacio de tiempo prácticamente imperceptible, ya que sólo dura desde que el usuario
+		pulsa el botón del ratón hasta que lo suelta.</li>
 		
-		
-		
+		</ul>
+		 
 		</p>
 		
 		
@@ -74,7 +97,7 @@
 		</nav>
 		<br><br>
 		<p>Codigo</p>
-		<textarea rows="50">
+		<textarea rows="50" cols="60">
 			nav ul {
 				list-style: none;
 				text-align: center;
