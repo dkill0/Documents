@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 10-11-2021 a las 14:27:48
+-- Tiempo de generación: 12-11-2021 a las 12:26:02
 -- Versión del servidor: 5.7.31
 -- Versión de PHP: 7.3.21
 
@@ -101,7 +101,7 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `tipo` int(1) DEFAULT NULL COMMENT '1 equivale a admin\r\n2 equivale a camarero\r\n3 equivale a cliente',
   PRIMARY KEY (`idUser`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `usuario`
@@ -113,7 +113,11 @@ INSERT INTO `usuario` (`idUser`, `email`, `nombre`, `contrasena`, `tipo`) VALUES
 (3, 'cliente1', 'Alberto', '123', 3),
 (4, 'cliente2@hotmail.com', 'Maria', '123', 3),
 (5, 'cliente3@hotmail.com', 'Nuria', '123', 3),
-(6, 'camarero2', 'Juani', '123', 3);
+(6, 'camarero2', 'Juani', '123', 2),
+(7, 'cliente4', 'Juan', '123', 3),
+(9, 'cliente5', 'Pepe', '123', 3),
+(10, 'cliente6', 'Ana', '123', 3),
+(11, 'cliente7', 'Rocio', '123', 3);
 
 --
 -- Restricciones para tablas volcadas
