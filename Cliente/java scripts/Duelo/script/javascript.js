@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+
 //Creacion de los objetos (mascotas) con sus nombres, raza e imagen.
-=======
+
     //creacion de los objetos a utilizar (mascotas: nombre, raza e imagen)
->>>>>>> c08e4f1a7eca1985137ff66e0a60eefe8f3793bb
+
     function creaPet(arg1, arg2, arg3) {
         this.nom=arg1;
         this.raza=arg2;
@@ -25,21 +25,20 @@
     var pet15= new creaPet("Cattana ","&nbsp;Michi&nbsp;","./img/cattana.jpeg");
     var pet16= new creaPet("Nala ","&nbsp;Michi&nbsp;","./img/nala.jpeg");
     var mascotas = [pet1, pet2, pet3, pet4, pet5, pet6, pet7, pet8, pet9, pet10, pet11, pet12, pet13, pet14, pet15, pet16];
-<<<<<<< HEAD
+
     //Dos conta para ir acumulando las veces que se pulsa el boton genera
     var conta=1;
     var conta2=2;
     
 
     //Funcion que devuelve un número aleatorio en función de la longitud de la cadena
-=======
-    
+
     //Creacion de los contadores para la funcion genera que cuenta los clicks realizados en el boton
     var conta=1;
     var conta2=2;
     
     //Funcion que genera un numero aleatorio en funcion de la longitud del array de mascotas 
->>>>>>> c08e4f1a7eca1985137ff66e0a60eefe8f3793bb
+
     function Aleatorio() {
         var aleatorio;
         if(mascotas.length>0){
@@ -51,24 +50,24 @@
     }
     
    
-<<<<<<< HEAD
+
    //Funcion para el boton genera
     function genera() { 
         /*Impares*/
 
         //Se crean e inicializan las variables y el numero aleatorio para ir rellenando de forma automatica cada campo de texto
-=======
+
    //Funcion que elige dos objetos de forma aleatoria y los coloca en el div correspondiente
     function genera() { 
         /*Div Pares*/
 
         //Creacion de las variables y del numero aleatorio
->>>>>>> c08e4f1a7eca1985137ff66e0a60eefe8f3793bb
+
         var numMasc1= Aleatorio();
         var nombreMasc="nombre";
         var razaMasc="raza";
         var imagen ="imagen"
-<<<<<<< HEAD
+
 
         //Se concatena el nombre con las variables conta, para ir acumulando el numero de veces que pulsamos el boton
         nombreMasc= nombreMasc + (conta);
@@ -86,7 +85,7 @@
         /*Pares*/
 
         //Creacion e inicializacion de las variables y el numero aleatorio
-=======
+
         //Concatenacion de las variables con la posicion en la que hay que colocar el objeto
         nombreMasc= nombreMasc + (conta);
         razaMasc= razaMasc + (conta);
@@ -104,13 +103,12 @@
         /*Div Impares*/
 
          //Creacion de las variables y del numero aleatorio
->>>>>>> c08e4f1a7eca1985137ff66e0a60eefe8f3793bb
+
         var numMasc2= Aleatorio();
         var nombreMasc="nombre";
         var razaMasc="raza";
         var imagen ="imagen"
-        
-<<<<<<< HEAD
+
         //Concatenacion de las variables con el segundo conta
         nombreMasc= nombreMasc + (conta2);
         razaMasc= razaMasc + (conta2);
@@ -125,7 +123,7 @@
         conta2+=2;
 
         //Final. Si el ultimo campo rellenado coincide con la ultima posicion en el duelo, se reproduce un video y una cancion
-=======
+
         //Concatenacion de las variables con la posicion en la que hay que colocar el objeto
         nombreMasc= nombreMasc + (conta2);
         razaMasc= razaMasc + (conta2);
@@ -141,7 +139,7 @@
         conta2+=2;
 
         //Si se ha pulsado el boton 8 veces (16 div acumulados), se reproduce un video con un audio de fondo
->>>>>>> c08e4f1a7eca1985137ff66e0a60eefe8f3793bb
+
         if (nombreMasc==="nombre16") {
             document.getElementById('video').src = "video/tata.mp4"
             document.getElementById('audio').src = "audio/jota.mp3"
@@ -151,17 +149,17 @@
         
     }
    
-<<<<<<< HEAD
+
     //Funcion del boton reiniciar
     function reiniciar(){
 
         //Se vuelve a reiniciar todos los elementos
-=======
+
 
     //Funcion que reinicia el programa a los valores predeterminados
     function reiniciar(){
         //Se elimina el video y el audio
->>>>>>> c08e4f1a7eca1985137ff66e0a60eefe8f3793bb
+
         document.getElementById('video').src = "";
         document.getElementById('audio').src = "";
         //Se colocan de nuevo los contadores a 1 para los impares y 2 para los pares
@@ -172,29 +170,29 @@
         var nombreMasc="nombre";
         var razaMasc="raza";
         var imagen ="imagen";
-<<<<<<< HEAD
+
         //Se vuelve a rellenar el array
         mascotas = [pet1, pet2, pet3, pet4, pet5, pet6, pet7, pet8, pet9, pet10, pet11, pet12, pet13, pet14, pet15, pet16];
         
         //Se reinician los valores sustituidos
-=======
+
 
         //Se vuelve a rellenar el array de mascotas
         mascotas = [pet1, pet2, pet3, pet4, pet5, pet6, pet7, pet8, pet9, pet10, pet11, pet12, pet13, pet14, pet15, pet16];
         
         //Se vuelven a poner los valores originales en los div
->>>>>>> c08e4f1a7eca1985137ff66e0a60eefe8f3793bb
+
         for (let i = 1; i < 17; i++) {
         document.getElementById(nombreMasc+i).innerHTML ="??????";
         document.getElementById(razaMasc+i).innerHTML = "?????";
         document.getElementById(imagen+i).src = "./img/huella.jpg";
         }   
-<<<<<<< HEAD
+
         //Se reinicia el contador de tiempo
-=======
+
 
         //Se reinicia el contador de tiempo (segundos, minutos y la concatenacion -s1-)
->>>>>>> c08e4f1a7eca1985137ff66e0a60eefe8f3793bb
+
         clearInterval(contador);
         s=0;
         m=0;
@@ -202,25 +200,24 @@
         //Se vuelve a iniciar el contador
         contador = setInterval(startTime, 1000);
     }
-<<<<<<< HEAD
+
     //Declaracion e inicializacion de las variables para el contador
-=======
+
 
     //Creacion de variables segundos, minutos, concatenacion y el intervalo
->>>>>>> c08e4f1a7eca1985137ff66e0a60eefe8f3793bb
+
     var s = 0;
     var m = 0;
     //Variable que añade el 0 concatenando
     var s1="0";
     var contador = setInterval(startTime, 1000);
-   
-<<<<<<< HEAD
+
     //Funcion que pone un contador de tiempo en la pantalla
     function startTime() {
         document.getElementById("contador").innerHTML = m + ":" + s1 + s;
         s = s+1;
         //Suma de los minutos
-=======
+
     //Funcion que añade un contador de tiempo (segundos y minutos)
     function startTime() {
         document.getElementById("contador").innerHTML = m + ":" +s1 + s;
@@ -228,17 +225,16 @@
         s = s+1;
 
         //Si llega a 59, se reinician los segundos y se suma 1 a los minutos
->>>>>>> c08e4f1a7eca1985137ff66e0a60eefe8f3793bb
+
         if(s>=60){
             s = 1;
             m = m +1;
         }
-<<<<<<< HEAD
+
         //Si los segundos estan entre 0 y 10 se añade un 0 delante
-=======
 
         //Si el segundo es menor que 10 se le concatena un 0
->>>>>>> c08e4f1a7eca1985137ff66e0a60eefe8f3793bb
+
         if(s<10){
             s1 = "0";
         }
