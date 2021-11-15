@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,37 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <p>Cuáles son pares: </p>
+
+    <p>-> 5 parametros (1, 4, 5, 8, 10)</p>
+    <p id="prueba1"></p>
+    <p>-> 9 parametros (11, 45, 65, 9, 13, 2, 24, 26, 0)</p>
+    <p id="prueba2"></p>
+    <p>-> 3 parametros (1, 4, 5)</p>
+    <p id="prueba3"></p>
+
+
+    <script>
+        //Funcion que toma una cantidad de parámetros indefinida y calcula cuales de ellos son numeros pares
+        function par() {
+            //Variable donde se van a ir guardando los numeros pares
+            var par=[];
+            
+        for (let i = 0; i < arguments.length; i++) {
+            if (arguments[i]%2==0 && arguments[i]!=0) {
+                par[i]=arguments[i];
+            }  
+        }
+        return par;
+        }
+
+        var p1 = par(1,4,5,8,10);
+        //La funcion join la utilizo para cambiar el separador ',' por un espacion en blanco
+        document.getElementById('prueba1').innerHTML = p1.join(" ");
+        var p2 = par(11,45,65,9,13,2,24,26,0);
+        document.getElementById('prueba2').innerHTML = p2.join(" ");
+        var p3 = par(1,4,5);
+        document.getElementById('prueba3').innerHTML = p3.join(" ");
+    </script>
 </body>
 </html>
