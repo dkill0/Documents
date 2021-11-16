@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 15-11-2021 a las 11:24:56
+-- Tiempo de generación: 15-11-2021 a las 11:28:25
 -- Versión del servidor: 5.7.31
 -- Versión de PHP: 7.3.21
 
@@ -33,6 +33,7 @@ DROP TABLE IF EXISTS `lineapedido`;
 CREATE TABLE IF NOT EXISTS `lineapedido` (
   `idPedido` int(11) NOT NULL,
   `idProducto` int(11) NOT NULL,
+  `cantidad` int(11) NOT NULL,
   PRIMARY KEY (`idPedido`,`idProducto`),
   KEY `idProducto` (`idProducto`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
@@ -139,7 +140,7 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 INSERT INTO `usuario` (`idUser`, `email`, `nombre`, `contrasena`, `tipo`) VALUES
 (1, 'admin', 'carlos', '123', 1),
 (2, 'camarero', 'Martin', '123', 2),
-(3, 'cliente1', 'Alberto', '123', 3),
+(3, 'cliente1', 'gines', '123', 3),
 (4, 'cliente2@hotmail.com', 'Maria', '123', 3),
 (5, 'cliente3@hotmail.com', 'Nuria', '123', 3),
 (6, 'camarero2', 'Juani', '123', 2),
