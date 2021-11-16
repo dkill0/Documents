@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +7,28 @@
     <title>Document</title>
 </head>
 <body>
+    <p>Fecha actual con 3 constructores diferentes.</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
     <script>
+        //Constructor que coge la fecha actual del sistema por defecto
         var d = new Date();
         document.getElementById("demo1").innerHTML = d;
-        var d2 = new Date("2021/10/04");
-        var fecha2;
-        document.getElementById("demo2").innerHTML = fecha2;
-        var d3 = new Date(2021,10,04);
-     
-        document.getElementById("demo3").innerHTML = d3;
+
+        //Se calculan los milisegundos desde el 1 de enero de 1970
+        var d2 = new Date();
+         var d3 = Date.now();
+         //Se crea un nuevo objeto date y usamos el dato anterior(milisegundos) como parametro para el nuevo objeto
+        var hoy = new Date(d3);
+        document.getElementById("demo2").innerHTML = hoy;
+
+        //Nuevo objeto que coge la fecha actual y lo convierte a string
+        var d3 = new Date();
+        var d4 = d3.toString();
+        //Se crea un nuevo objeto que recibe como parametro la fecha pasada a string
+        var d5= new Date(d4);
+        document.getElementById("demo3").innerHTML = d5;
 
 
     </script>

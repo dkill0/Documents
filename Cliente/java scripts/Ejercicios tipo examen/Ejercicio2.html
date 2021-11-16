@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +7,12 @@
     <title>Document</title>
 </head>
 <body>
+    <p>Cuantos milisegundos han transcurrido desde el 1 de enero de 1970.</p>
     <p id="demo"></p>
     <script>
+        //Se crea un constructor con la fecha actual
         var d = new Date();
+        //Se guardan los milisegundos en una variable
         var c = d.getTime();
         document.getElementById("demo").innerHTML = c;
      </script>

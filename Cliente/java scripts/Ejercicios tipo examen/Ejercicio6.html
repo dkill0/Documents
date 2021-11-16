@@ -7,6 +7,24 @@
     <title>Document</title>
 </head>
 <body>
+    <p>Objeto cubo.</p>
+    <p>Medidas: <p id="medidas"></p></p>
+   
     
+    
+    <script>
+        //Creamos un objeto cubo con las especificaciones
+    const cubo = {altura: 5, anchura: 10, profundidad: 3,
+        //metodo para imprimir por pantalla las medidas
+        medidas: function () {
+            return "Altura: " + this.altura + " / Anchura: "+ this.anchura + " / Profundidad: " + this.profundidad;
+        }
+
+    }
+
+    document.getElementById("medidas").innerHTML = cubo.medidas();
+  </script>
+
+
 </body>
 </html>

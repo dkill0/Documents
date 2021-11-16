@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,11 +11,54 @@
 <h2>Ejercicio 4</h2>
 
 <p>Modifica el año actual a 2023</p>
-
+<p>Fecha actual - año 2023:</p>
 <p id="demo"></p>
+<p>El dia de la semana es: </p>
+<p id="dia"></p>
     <script>
-        var d = new Date(2023, 10, 2);
+        //Creo un constructor con la fecha actual
+        var d = new Date();
+        //Le cambio el año mediante el siguiente metodo
+        d.setFullYear(2023);
         document.getElementById("demo").innerHTML = d;
+        //Cojo el día de la semana del objeto como numero entero
+        var day=d.getDay();
+        var diaSemana="";
+        //Depende del número, lo transformo a string el dia de la semana correspondiente 
+        switch (day) {
+            case 0:
+                diaSemana="Lunes";
+                break;
+            case 1:
+                diaSemana="Martes";
+                break;
+    
+            case 2:
+                diaSemana="Miércoles";
+                break;
+    
+            case 3:
+                diaSemana="Jueves";
+                break;
+        
+            case 4:
+                diaSemana="Viernes";
+                break;
+    
+            case 5:
+                diaSemana="Sábado";
+                break;
+                
+            case 6:
+                diaSemana="Domingo";
+                break;
+        
+        
+            default:
+                diaSemana="No existe";
+                break;
+        }
+        document.getElementById("dia").innerHTML = diaSemana;
         </script>
 </body>
 </html>
