@@ -5,8 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script>
+        
+        function Cesar() {
+            //Capturo los elementos
+            var cadena = document.getElementById("cadena").value;
+            var clave = parseInt(document.getElementById("clave").value).toString();
+            var clave2 = [];
+            
+            var cadena2 = "";
+        
+            for (let i = 0; i < cadena.length; i++) {
+                
+            //Se guardan los numeros de la clave dentro de un array de numeros
+            
+                clave2[i]= clave.charAt(i); 
+            
+               
+            console.log(clave2);
+                //Compruebo que son letras de la a - z en minuscula
+                if(cadena.charAt(i)>='a' && cadena.charAt(i)<='z'){
+                    //Guardo el codigo unicode de la letra + la clave
+                    var caracter=(cadena.charCodeAt(i) + parseInt(clave2[i]));
+                    
+                    //Compruebo que si el codigo unicode es mayor que el de la z
+                    if (String.fromCharCode(caracter)>'z') {
+                        //Si es mayor, se le resta 26 (la cantidad de letras del abecedario)
+                        caracter = caracter -26;
+                    }
+
+                    //Transformo el codigo unicode a caracter y lo concateno
+                    cadena2 = cadena2 + String.fromCharCode(caracter);
+
+                    //Compruebo que son letras de la a - z en mayuscula
+                }else if(cadena.charAt(i)>='A' && cadena.charAt(i)<='Z'){
+                    var caracter=(cadena.charCodeAt(i) + parseInt(clave2[i]));
+                
+                if (String.fromCharCode(caracter)>'Z') {
+                        caracter = caracter -26;
+                    }
+                    cadena2 = cadena2 + String.fromCharCode(caracter);  
+                    //Si no es ninguno de los casos anteriores, los ignora y concatena.  
+                }else{
+                    cadena2=cadena2+cadena.charAt(i);
+                }
+            
+
+            }
+            document.getElementById("resultado").innerHTML= cadena2;
+        }
+
+
+
+    </script>
 </head>
 <body>
-    
+    <h2>Escribe un texto</h2>
+    <input id="cadena" type="text" maxlength="45" size="50">
+    <h2>Escribe una clave</h2>
+    <input id="clave" type="number" maxlength="10" size="15">
+    <br><br>
+    <button style="width: 20%" onclick="Cesar()">Cifrar</button>
+
+    <h2>Cifrado</h2>
+    <p id="resultado">&nbsp;</p>
 </body>
 </html>
