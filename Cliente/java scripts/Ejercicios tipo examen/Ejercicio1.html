@@ -16,16 +16,18 @@
             var clave3 = [];
             var cadena2 = "";
         
+            for (let j = 0; j < clave.length; j++) {
+                    clave3[j]= clave.charAt(j); 
+                
+                }
+
+                
+                console.log(clave3);
             for (let i = 0; i < cadena.length; i++) {
                 
             //Se guardan los numeros de la clave dentro de un array de numeros
-                for (let j = 0; j < cadena.length; j++) {
-                    clave3[j]= clave.charAt(j); 
-                    console.log(clave3);
-                }
-
                 clave2[i]=clave3[i];
-                console.log(clave2);
+               console.log(clave2);
             
                
                 //Compruebo que son letras de la a - z en minuscula
