@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<h1>Array de 10 elementos inicial:</h1>
+	<p id="arrayIn"></p>
+
+	<p id="star1"></p>
+
+	<input type="text" id="anade">
+	<button onclick="anadeFin()">Añadir</button>
+	<br><br>
+	<input type="text" id="borra">
+	<button onclick="elimina()">Eliminar</button>
+
+
+	<script type="text/javascript">
+
+		//Funcion que genera un num aleatorio entre 1 y 50
+		function aleatorio() {
+			var rand = (Math.floor(Math.random()*(50+1)));
+			return rand;
+		}
+
+		//Creacion del array
+		var arr = new Array();
+
+		//Se rellena el array con 10 num aleatorios
+		for (var i = 0; i < 10; i++) {
+			arr[i] = aleatorio();
+           
+		}
+		
+
+		
+		
+
+		//Añade un elemento añadido en un campo de texto al final del array
+		function anadeFin(){
+
+			var param = parseInt(document.getElementById("anade").value);
+			//Si no es un numero salta una alerta
+			if(isNaN(param)){
+				alert("inserte un numero");
+		}else{
+			arr.push(param);
+			document.getElementById("arrayIn").innerHTML = arr;
+			
+		}
+			
+		}
+
+		//Elimina un elemento añadido en un campo tantas veces como aparezca
+		function elimina(){
+
+			var param = parseInt(document.getElementById("borra").value);
+			//Si no es un numero salta una alerta
+			if(isNaN(param)){
+				alert("inserte un numero");
+
+			}else{
+				for (var i = 0; i<arr.length-1; i++){
+				if(arr[i]==param){
+					arr.splice(i,1);
+				}
+			}
+
+			document.getElementById("arrayIn").innerHTML = arr;
+			}
+			
+		}
+
+		//Muestra tantos asteriscos como sea el valor del array en cada posicion
+		function muestraAst(){
+			
+			for (var i = 0; i<arr.length; i++){
+				var num = arr[i];
+				var est="";
+				for (var j = 0; j<num; j++){
+					
+					 est += "*";
+					
+					
+				}
+				
+			}
+			document.getElementById("star1").innerHTML = est + "<br>";  
+		}
+
+		//Actualiza el array
+		document.getElementById("arrayIn").innerHTML = arr;
+		//Muestra los asteriscos
+		muestraAst();
+	</script>
+</body>
+</html>
