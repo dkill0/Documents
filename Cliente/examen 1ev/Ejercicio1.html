@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		
+		function dibuja() {
+			var orienta = document.getElementById('orienta').value;
+
+			var alt= parseInt(document.getElementById('altura').value);
+
+			var imprime = "";
+
+			if (orienta==="invert") {
+
+			for (var i = alt; i > 0; i--) {
+				
+				for (var j = 0; j < i; j++){
+
+
+					imprime += "*";
+					
+				}
+				imprime += "<br>";
+					
+			}
+			document.getElementById('no').innerHTML = imprime;
+
+			}else if(orienta==="centr"){
+
+			for (var i = 0; i < alt; i++) {
+				
+				for (var j = alt-1; j > i; j--) {
+					imprime += ".";
+
+					}
+				for (var k = 0; k <= i; k++){
+
+
+					imprime += "*";
+					
+				}
+				imprime += "<br>";
+					
+			}
+			
+			document.getElementById('no').innerHTML = imprime;
+			}else if(orienta=="normal"){
+
+
+			for (var i = 0; i < alt; i++) {
+				
+				for (var j = 0; j <= i; j++){
+
+
+					imprime += "*";
+					
+				}
+				imprime += "<br>";
+					
+			}
+			
+			document.getElementById('no').innerHTML = imprime;
+			}
+
+			
+			
+		}
+
+
+
+	</script>
+
+
+<h1>Constructor de pirámides CES Vega Media</h1>
+
+<p>Orientacion</p>
+<select name="opc" id="orienta">
+	<option value="invert">Invertida</option>
+	<option value="centr">Centrada</option>
+	<option value="normal">Normal</option>
+
+</select>
+
+<p>Altura</p>
+<input type="text" id="altura">
+
+<br><br>
+
+<button onclick="dibuja()">Dibujar</button>
+
+<p id="no"></p>
+</body>
+</html>

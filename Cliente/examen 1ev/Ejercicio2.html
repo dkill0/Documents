@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+		//Funcion que carga los valores introducidos y los guarda en un array de objetos
+		function carga() {
+		var nombres1=document.getElementById("nombre").value;
+		var ed = document.getElementById("edades").value;
+		var nombres2 = nombres1.split("-");
+		
+		var ed2 = ed.split(":");
+		
+
+		var personas = new Array();
+		for (var i = 0; i < nombres2.length; i++) 
+		{
+
+		
+			personas[i] = {nombre: nombres2[i], edad: ed2[i]}
+
+		}
+		
+		return personas;
+	
+	}
+
+//Funcion que elige un objeto de manera aleatoria, lo muestra por pantalla y resetea los campos de texto
+	function sortea(){
+
+
+		var personas = carga();
+		console.log(personas);
+		console.log(personas.length);
+		var aleatorio = Math.floor(Math.random()*personas.length);
+
+			
+		document.getElementById('resultado').innerHTML = personas[aleatorio].nombre+" con una edad de "+ personas[aleatorio].edad+ " ha ganado el sorteo.";
+		document.getElementById('nombre').value = "";
+		document.getElementById('edades').value = "";
+		
+		
+
+	}
+
+
+</script>
+	<h1>Sorteos CES Vega Media</h1>
+
+	<p>Nombres</p>
+	<input type="text" id="nombre">
+	<br>
+	<p>Edades:</p>
+	<input type="text" id="edades">
+	<br><br>
+	<button onclick="carga()">Cargar datos</button>
+	<button onclick="sortea()">Sortear</button>
+
+	<p id="resultado"></p>
+
+
+
+
+
+</body>
+</html>
