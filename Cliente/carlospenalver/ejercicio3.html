@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p id="ancho"></p>
+	<p id="alto"></p>
+	<p id="anchoDispo"></p>
+	<p id="altoDispo"></p>
+	<p id="profunColor"></p>
+	<p id="profunPixel"></p>
+	<button onclick="nuevaVent()">Nueva ventana</button>
+
+<script>
+	var nuevaVentana;
+	var ancho= screen.width;
+	var alto= screen.height;
+	var anchoDispo=screen.availWidth;
+	var altoDispo=screen.availHeight;
+	var profunColor =screen.colorDepth;
+	var profunPixel= screen.pixelDepth;
+document.getElementById("ancho").innerHTML ="Anchura total: " + ancho;
+document.getElementById("alto").innerHTML ="Altura total: " + alto ;
+document.getElementById("anchoDispo").innerHTML ="Anchura disponible: " + anchoDispo;
+document.getElementById("altoDispo").innerHTML ="Altura disponible: " + altoDispo ;
+document.getElementById("profunColor").innerHTML ="Profundidad de color: " + profunColor ;
+document.getElementById("profunPixel").innerHTML =
+"Profundidad del pixel: " + profunPixel ;
+
+
+function nuevaVent(){
+	var anchoHij= ancho/2;
+	
+	var altoHij= alto/2;
+	
+	
+	nuevaVentana= window.open("", "","width=100,height=100");
+	nuevaVentana.resizeTo(anchoHij,altoHij);
+	//nuevaVentana.moveTo(anchoHij,altoHij);
+}
+</script>
+
+
+</body>
+</html>

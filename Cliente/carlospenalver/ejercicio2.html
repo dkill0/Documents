@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p>Introduce tu edad</p>
+	<input id="edad" type="number">
+	<button onclick="comprueba()">Aceptar</button>
+	<p id="demo"></p>
+
+<script>
+	
+
+	function comprueba(){
+		var edad1 = parseInt(document.getElementById('edad').value);
+		if (confirm("¿Tienes "+ edad1 +" años?")){
+			  var myWindow = window.open("", "_self");
+ 				myWindow.document.write("<p>Tu edad es "+edad1+"</p>");
+
+		}else{
+			txt="Vuelve a intentarlo.";
+		}
+document.getElementById("demo").innerHTML = txt;
+
+	}
+</script>
+</body>
+</html>
