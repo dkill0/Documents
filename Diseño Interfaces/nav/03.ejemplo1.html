@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css" rel="stylesheet">
+	<script src="../js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<h1>Plegables</h1>
+			<div class="col">
+				<h2>Plegable simple con boton</h2>
+				<p>Haz click sobre el boton para mostrar/ocultar contenido</p>
+				<button type="button"class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#plegable1">Plegable boton</button>
+				<div id="plegable1" class="collapse show">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptatem nesciunt eveniet fuga saepe nobis rerum iure illo obcaecati, quidem voluptatibus perferendis voluptatum maxime asperiores similique unde ea inventore debitis.
+				</div>
+			</div>
+			<div class="col">
+				<h2>Plegable simple con enlace</h2>
+				<p>Haz click sobre el enlace para mostrar/ocultar contenido</p>
+				<a href="#plegable2" class="btn btn-primary" data-bs-toggle="collapse">Plegable boton</a>
+				<div id="plegable2" class="collapse">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptatem nesciunt eveniet fuga saepe nobis rerum iure illo obcaecati, quidem voluptatibus perferendis voluptatum maxime asperiores similique unde ea inventore debitis.
+				</div>
+			</div>
+			<hr>
+			<h1>Acordeones</h1>
+			<div class="accordion" id="ejmp1">
+				<div class="accordion-item">
+					<div class="accordion-header">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse" href="#plegable01">Item1</button>
+					</div>
+					<div class="accordion-collapse collapse show" id="plegable01" data-bs-parent="#ejmp1">
+						<div class="accordion-body">
+							Lorem ipsum dolor sit amet consectetur adipisicing, elit. Rem laboriosam repudiandae, officia provident quas eaque eum! Maxime quam enim tempore vitae officia non beatae, sequi maiores, ab incidunt, numquam et.
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<div class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" href="#plegable02">Item2</button>
+					</div>
+					<div class="accordion-collapse collapse" id="plegable02" data-bs-parent="#ejmp1">
+						<div class="accordion-body">
+							Lorem ipsum dolor sit amet consectetur adipisicing, elit. Rem laboriosam repudiandae, officia provident quas eaque eum! Maxime quam enim tempore vitae officia non beatae, sequi maiores, ab incidunt, numquam et.
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<div class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" href="#plegable03">Item 3</button>
+					</div>
+					<div class="accordion-collapse collapse" id="plegable03" data-bs-parent="#ejmp1">
+						<div class="accordion-body">
+							Lorem ipsum dolor sit amet consectetur adipisicing, elit. Rem laboriosam repudiandae, officia provident quas eaque eum! Maxime quam enim tempore vitae officia non beatae, sequi maiores, ab incidunt, numquam et.
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<h1>Carrusel</h1>
+
+			<div id="ejemplo-carrusel" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active"><img class="d-block w-100" src="images/vegamedia01.jpg" alt="">
+						<div class="carousel-caption">
+							<h4>Instalaciones deportivas</h4>
+							<p>Campo de furbol</p>
+						</div>
+					</div>
+					<div class="carousel-item"><img class="d-block w-100" src="images/vegamedia02.jpg" alt=""></div>
+					<div class="carousel-item"><img class="d-block w-100" src="images/vegamedia03.jpg" alt=""></div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#ejemplo-carrusel" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#ejemplo-carrusel" data-bs-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</button>
+
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#ejemplo-carrusel" data-bs-slide-to="0" class="active"></button>
+					<button type="button" data-bs-target="#ejemplo-carrusel" data-bs-slide-to="1" ></button>
+					<button type="button" data-bs-target="#ejemplo-carrusel" data-bs-slide-to="2" ></button>
+				</div>
+				<hr>
+
+
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
