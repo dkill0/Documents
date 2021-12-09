@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carlos Peñalver</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css" rel="stylesheet">
+	<script src="../js/bootstrap.bundle.min.js"></script>
+	<link  rel="icon"   href="favicon.png" type="image/png" />
+	<style>
+		
+		.cabe{
+    background-image: url("luz.png");
+    background-position: center center;
+    background-size: cover;
+    
+}
+.carousel-inner> .item> img {
+ width:100%; height:570px;
+}
+
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Carlos Peñalver Alonso</h1>
+		
+	</header>
+	<nav class="cabe navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+
+		<div class="container-fluid justify-content-between">
+
+			<a class="navbar-brand" href="">
+				<img src="img/totakeke.png" alt="" style="width:40px">
+			</a>
+			
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_plegable2">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbar_plegable2">
+			<ul class="navbar-nav me-auto">
+				<li class="nav-item">
+					<a class="nav-link link-active text-end" href="#">Inicio</a>
+				</li>
+				<li class="nav-item text-end"><a class="nav-link" href="#">Blog</a></li>
+				<li class="nav-item text-end"><a class="nav-link" href="#">Contacto</a></li>
+			</ul>
+			<br>
+			<div class="justify-content-around d-flex">
+				<p style="color: white" class="">Carlos Peñalver Alonso</p>
+				<span style="color: white" class="fst-italic ms-3">Desarrollador Web</span>
+			</div>
+			</div>
+			
+		</div>
+ 
+			
+	</nav>
+
+<div class="container">
+	<div class="mt-4 text-center"><h1>Mis series de animación favoritas</h1></div>
+	<div id="carouselExampleIndicators" class=" carousel slide carousel-fade" data-bs-ride="carousel">
+	  	<div class="carousel-indicators">
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	  </div>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img src="img/masallaPeq.jpg" class="d-block w-100" alt="...">
+	      <div class="carousel-caption d-none d-md-block bg-dark rounded">
+	        <h3>Más allá del jardín</h3>
+	        <p>Es una miniserie animada estadounidense de 10 episodios que se centra alrededor de dos hermanos que viajan a través de un extraño bosque con el fin de encontrar su camino a casa.</p>
+	      </div>
+	    </div>
+	    <div class="carousel-item">
+	      <img src="img/kipoPeq.jpg" class="d-block w-100" alt="...">
+	      <div class="carousel-caption d-none d-md-block bg-dark rounded">
+	      	<h3>Kipo y la era de las bestias mágicas</h3>
+       		<p>Es una serie que transcurre en un páramo urbano postapocalíptico lleno de animales mutantes.</p>
+     	  </div>
+	    </div>
+	    <div class="carousel-item">
+	      <img src="img/stevenPeq.jpg" class="d-block w-100" alt="...">
+	      <div class="carousel-caption d-none d-md-block bg-dark rounded">
+		    <h3>Steven Universe</h3>
+	        <p>Narra la historia de un niño llamado Steven, que vive en el pueblo ficticio de Beach City (Ciudad Playa en Latinoamérica) junto a tres guerreras alienígenas con superpoderes.</p>
+     	 </div>
+	    </div>
+	  </div>
+	  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Previous</span>
+	  </button>
+	  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Next</span>
+	  </button>
+	</div>
+</div>
+</body>
+</html>
