@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <style type="text/css">
+		.row > div {background-color: #E2e2e2; border: 1px solid #808080; margin:  5px 0; text-align: center;}
+        .row2 {
+			background: #E8E8E8;
+			height: 150px;
+			margin-top: 20px;
+		}
+		.col2 {
+			background: #F2F2F2;
+			padding: 10px;
+			text-align: center;
+			border: 1px solid #4D5061;
+		}
+
+	</style>
+</head>
+
+<body>
+    <div class="container">
+        <p>Estilo de esta pagina: </p>
+        <textarea class="form-control" rows="10"><style type="text/css">
+            .row > div {background-color: #E2e2e2; border: 1px solid #808080; margin:  5px 0; text-align: center;}
+        </style></textarea>
+        <h1>Estructura</h1>
+        <a href="../index bootstrap.html">Volver</a>
+        <h2>Basica</h2>
+        <textarea class="form-control" rows="10">
+            <div class="container">
+                <header>
+                    Cabecera
+                </header>
+                <section>
+                    <main>
+                        
+                        principal
+                    </main>
+            
+                    <aside>
+                        Barra Lateral
+                    </aside>
+            
+                </section>
+                
+                <footer>
+                    Pie
+                </footer>
+            </div>
+        </textarea>
+
+        <h2>Algunos ejemplos del grid</h2>
+        <div class="row">
+			<div class="col-6 col-sm-3">Columna 1</div>
+			<div class="col-6 col-sm-3">Columna 2</div>
+			<div class="w-100"></div>
+			<div class="col-6 col-sm-3">Columna 3</div>
+			<div class="col-6 col-sm-3">Columna 4</div>
+		</div>
+        <textarea class="form-control" rows="10">
+            <div class="row">
+                <div class="col-6 col-sm-3">Columna 1</div>
+                <div class="col-6 col-sm-3">Columna 2</div>
+                <div class="w-100"></div>
+                <div class="col-6 col-sm-3">Columna 3</div>
+                <div class="col-6 col-sm-3">Columna 4</div>
+            </div>
+        </textarea>
+
+        <div class="row">
+			<div class="col-4 col-sm-3">Columna 1</div>
+			<div class="col-8 col-sm-9">
+				Columna 2
+				<div class="row">
+					<div class="col-12 col-sm-6">Columna 2a</div>
+					<div class="col-12 col-sm-6">Columna 2b</div>
+				</div>
+			</div>
+		</div>
+        <textarea class="form-control" rows="10">
+            <div class="row">
+                <div class="col-4 col-sm-3">Columna 1</div>
+                <div class="col-8 col-sm-9">
+                    Columna 2
+                    <div class="row">
+                        <div class="col-12 col-sm-6">Columna 2a</div>
+                        <div class="col-12 col-sm-6">Columna 2b</div>
+                    </div>
+                </div>
+            </div>
+        </textarea>
+        <div class="row2">
+			<div class="col2 align-self-star"> Columna 1 </div>
+			<div class="col2 align-self-center"> Columna 2 </div>
+			<div class="col2 align-self-end"> Columna 3</div>
+		</div>
+    </div>
+</body>
+
+</html>
