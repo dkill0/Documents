@@ -1,15 +1,33 @@
 div.parallax {
     /* The image used */
-    background-image: url("./img/img3.png");
+    background-image: url("./img/lodesconocido\ \(Personalizado\).png");
   
     /* Set a specific height */
-   height: 100%;
-  
+      
     /* Create the parallax scrolling effect */
     background-attachment:  fixed;
-    background-position: center;
+    background-position: top ;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: center;
   
   }
+.contenido{
+  background-image: url("./img/img3.png");
+  
+  /* Set a specific height */
+    
+  /* Create the parallax scrolling effect */
+  background-attachment:  fixed;
+  background-position: top ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.card{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+}
+
+.comentario{
+  background-color: #e5c781;
+}
