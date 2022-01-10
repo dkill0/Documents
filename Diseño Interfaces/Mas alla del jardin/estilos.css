@@ -38,10 +38,7 @@ div.parallax {
 }
 
 /* Create two equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  padding: 0 4px;
-}
+
 
 .column img {
   margin-top: 8px;
