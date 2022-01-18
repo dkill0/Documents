@@ -6,7 +6,8 @@ body{
     background-color: #b8cccc;
 }
 .titulo{
-    background-color: #9dbe15 ;
+  color: #9dbe15 ;
+  background-color: white  ;
     text-align: center;
     font-weight: bold;
     font-family: 'Sego' ;
@@ -60,4 +61,16 @@ body{
   .dropdown:hover .dropdown-content {display: block;}
   
 
-  
+  .sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 100px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    bottom: 0; /* Stay at the top */
+    right:0;
+    margin-bottom: 400px;
+   
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 700px;
+  }
+
