@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <br>
+    <h1>Test rápido</h1>
+
+
+    <p>Cuantos gatos tengo en mi casa actualmente?</p>
+    <select class="test">
+        <option value="nulo"></option>
+        <option value="">2</option>
+        <option value="ok">4</option>
+        <option value="">5</option>
+    </select>
+
+    <br><br>
+
+
+
+    <p>Que es una oreja?</p>
+    <select class="test">
+        <option value="nulo"></option>
+        <option value="">una parte del cuerpo</option>
+        <option value="ok">60 minutejos</option>
+        <option value="">un tipo de reloj</option>
+    </select>
+
+    <br><br>
+
+    <p>Cuantas temporadas tienen los simpsons?</p>
+    <select class="test">
+        <option value="nulo"></option>
+        <option value="">13</option>
+        <option value="">34</option>
+        <option value="ok">No tengo ni idea pero un monton</option>
+    </select>
+
+    <br><br>
+
+
+    <p>aprobare despliegue?</p>
+    <select class="test">
+        <option value="nulo"></option>
+        <option value="">si me esfuerzo y estudio, si</option>
+        <option value="">no</option>
+        <option value="ok">un 5 son practicas</option>
+    </select>
+
+
+    <br><br>
+
+    <button type="button" onclick="comprueba()">Finalizar</button>
+</body>
+<script>
+    //Funcion del boton
+    function comprueba() {
+        let bien = 0;
+        let mal = 0;
+        let nulo = 0;
+        
+        //Se guardan las preguntas en un array
+        let preguntas = document.getElementsByClassName("test"); 
+        
+
+        //Para cada pregunta, ver qué valor se ha seleccionado y contar en consecuencia.
+
+        for (let i = 0; i < preguntas.length; i++) {
+            if (preguntas[i].value == "ok"){
+                bien++;
+            } 
+            else if (preguntas[i].value == "nulo"){
+                nulo++;
+            } 
+            else {
+                mal++;
+            }
+            
+        }
+
+
+
+        //Se muestra por pantalla el resultado
+        alert("Tu puntuacion: " + bien + " aciertos | " + mal + " errores | " + nulo + " nulos");
+
+    }
+
+
+
+
+</script>
+</html>
