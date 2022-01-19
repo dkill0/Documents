@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: yellow;
+    }
+
+    #animate {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+
+        background-image: url('./pngegg.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+</style>
+
+<body>
+
+    <p><button onclick="movimiento()">Dale</button></p>
+
+    <div id="container">
+        <div id="animate">
+
+        </div>
+    </div>
+
+    <script>
+        function movimiento() {
+            let velocidad = null;
+            let dvd = document.getElementById("animate");
+
+            //Se elige al azar una posicion en el contenedor
+            let ejeX = Math.floor(Math.random() * 351);
+            let ejeY = Math.floor(Math.random() * 351);
+
+            //Sentido del desplazamiento, si es positivo subira o se movera a la derecha
+            let x = 1;
+            let y = 1;
+
+            //Se ajusta la velocidad de desplazamiento, cada 10 milisegundos cambia la animacion
+            velocidad = setInterval(desplaza, 10);
+
+
+            //Funcion que desplaza el div y el color de fondo dependiendo de su posicion 
+            function desplaza() {
+
+                //Es mayor o igual para poder hacer el movimiento "aleatorio" sin que se salga de los margenes
+                if (ejeX >= 350) {
+                    document.getElementById("container").style.backgroundColor = "#3774e8";
+                    x = -1;
+                    ejeX--;
+                } else if (ejeY >= 350) {
+                    document.getElementById("container").style.backgroundColor = "#f7f700";
+                    y = -1;
+                    ejeY--;
+                } else if (ejeX <= 0) {
+                    document.getElementById("container").style.backgroundColor = "#f05630";
+                    x = 1;
+                    ejeX++;
+                } else if (ejeY <= 0) {
+                    document.getElementById("container").style.backgroundColor = "#d00f36";
+                    y = 1;
+                    ejeY++;
+                }
+
+                else {
+                    //Suma llas posiciones y las modifica
+                    ejeX = ejeX + x * 1.5;
+                    ejeY = ejeY + y * 1;
+                    dvd.style.top = ejeY + "px";
+                    dvd.style.left = ejeX + "px";
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

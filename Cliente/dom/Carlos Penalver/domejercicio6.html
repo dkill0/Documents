@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+
+<body>
+    <h1>Página con enlaces</h1>
+    <a href="http://www.ces-vegamedia.es">Centro Vega Media</a>
+    <div id="enlaces">
+        <a href="http://www.pccomponentes.com">PC Componentes</a><br>
+        <a href="enlace2.html">Mi página 2</a>
+    </div>
+    <a href="http://es.aliexpress.com">Aliexpress</a><br>
+    <a href="enlace3.html">Mi página 3</a>
+    <p>
+        <input type="button" name="boton" value="Abrir" onclick="abrir()">
+    </p>
+    <div id="resultado">
+        
+    </div>
+  
+
+</body>
+<script>
+    function abrir() {
+        let conta = 0;
+        //Se guardan las url en un array
+        let ventanas = document.getElementsByTagName("a");
+
+
+        //Se empieza a crear una lista
+        document.getElementById("resultado").innerHTML = "<ol>";
+
+            
+        for (let i = 0; i < ventanas.length; i++) {
+            //Se buscan los enlaces validos (que empiecen por http)
+            if (ventanas[i].href.indexOf("http:") != -1) {
+                //Por cada enlace valido se abre una ventana y se suma 1 a las ventanas abiertas
+                window.open(ventanas[i].href, i, "width=500,height=500");
+                conta++;
+
+                //Se imprime el nombre de los enlaces 
+                document.getElementById("resultado").innerHTML += "<li>" + ventanas[i].innerHTML + "</li>";
+            }
+        }
+
+        document.getElementById("resultado").innerHTML += "</ol>  <br>";
+
+        document.getElementById("resultado").innerHTML += "Páginas abiertas: " + conta;
+
+    }
+</script>
+
+</html>
