@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Mi primer documento xml-->
+<ejemplo>
+    <persona>
+        <nombre>Pedro</nombre>
+        <apellido>Sanchez</apellido>
+        <mujer/>
+        <fechaNac>
+            <dia>10</dia>
+            <mes>5</mes>
+            <ano>1987</ano>
+        </fechaNac>
+    </persona>
+    <ciudad>Murcia</ciudad>
+   
+
+    
+</ejemplo>
+

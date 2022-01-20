@@ -68,10 +68,7 @@
         
         //Se guardan las preguntas en un array
         let preguntas = document.getElementsByClassName("test"); 
-        
-
         //Para cada pregunta, ver qué valor se ha seleccionado y contar en consecuencia.
-
         for (let i = 0; i < preguntas.length; i++) {
             if (preguntas[i].value == "ok"){
                 bien++;
@@ -84,9 +81,6 @@
             }
             
         }
-
-
-
         //Se muestra por pantalla el resultado
         alert("Tu puntuacion: " + bien + " aciertos | " + mal + " errores | " + nulo + " nulos");
 
