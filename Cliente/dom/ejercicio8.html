@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body onload="cambio()">
+    <h1 id="frase" >Hola, este texto cambiara de color</h1>
+    <script>
+        //Se define el array de colores
+        function cambio() {
+            let colores = ["#d00f36", "#f05630", "#f7f700", "#008a00", "#3774e8", "#66287c", "#f0a3b5", "#000000", "#90744b", "#8a008a"];
+            
+           
+    
+            //Funcion que elige un numero al azar y lo define como color de fondo
+            
+                let num = Math.floor(Math.random() * 10);
+                document.getElementById("frase").style.color = colores[num];
+                
+    
+            
+        }
+    </script>
+</body>
+
+
+</html>

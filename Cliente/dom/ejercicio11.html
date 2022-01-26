@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="campo" onKeyUp="mayusculas()">
+
+    <div id="texto">
+        hola soy carlos
+    </div>
+
+    <input class="fondo" type="text">
+    <input class="fondo" type="text">
+    <input class="fondo" type="text">
+
+    <script>
+
+        let rueda = document.getElementById("texto");
+        let colores = ["#d00f36", "#f05630", "#f7f700", "#008a00", "#3774e8", "#66287c", "#f0a3b5", "#000000", "#90744b", "#8a008a"];
+
+        parent.addEventListener('wheel', function () {
+            //Funcion que elige un numero al azar y lo define como color de fondo
+            let num = Math.floor(Math.random() * 10);
+            rueda.style.background = colores[num];
+
+
+        });
+
+        function mayusculas() {
+            let texto = document.getElementById("campo").value;
+            document.getElementById("campo").value = texto.toUpperCase()
+        }
+
+
+        let array = document.getElementsByClassName("fondo");
+
+        for (let i = 0; i < array.length; i++) {
+
+            array[i].setAttribute("onmouseover", "cambiaFondo(this)");
+            array[i].setAttribute("onmouseout", "vuelveFondo(this)");
+
+        }
+
+        function cambiaFondo(arr) {
+            arr.style.backgroundColor = "cyan";
+            console.log("si")
+        }
+        function vuelveFondo(arr) {
+            arr.style.backgroundColor = "white";
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
