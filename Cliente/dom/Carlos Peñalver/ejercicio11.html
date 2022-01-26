@@ -20,10 +20,14 @@
     <input class="fondo" type="text">
 
     <script>
-
+        //Guardamos el elemento que va a activarse con el movimiento de la rueda
         let rueda = document.getElementById("texto");
+
+        //Array de colores para el evento de la rueda
         let colores = ["#d00f36", "#f05630", "#f7f700", "#008a00", "#3774e8", "#66287c", "#f0a3b5", "#000000", "#90744b", "#8a008a"];
 
+        //Ponemos un parent para que detecte el movimiento en todo el documento y no solo dentro del elemento
+        //Se añade un eventListener que capture cada vez que la rueda del raton se mueva
         parent.addEventListener('wheel', function () {
             //Funcion que elige un numero al azar y lo define como color de fondo
             let num = Math.floor(Math.random() * 10);
@@ -31,15 +35,18 @@
 
 
         });
-
+        
+        //Funcion que cambia a mayusculas el primer input segun se escribe sobre el 
         function mayusculas() {
             let texto = document.getElementById("campo").value;
             document.getElementById("campo").value = texto.toUpperCase()
         }
 
 
+        //Se guarda una coleccion de los elementos con la clase fondo
         let array = document.getElementsByClassName("fondo");
 
+        //Por cada elemento se le añade dos eventos, un onmouseover y un onmouseout
         for (let i = 0; i < array.length; i++) {
 
             array[i].setAttribute("onmouseover", "cambiaFondo(this)");
@@ -47,10 +54,13 @@
 
         }
 
+        //Funcion para el onmouseover que cambia el fondo de los div a cyan
         function cambiaFondo(arr) {
             arr.style.backgroundColor = "cyan";
             console.log("si")
         }
+        //Funcion para el onmouseover que cambia el fondo de los div a blanco
+
         function vuelveFondo(arr) {
             arr.style.backgroundColor = "white";
         }

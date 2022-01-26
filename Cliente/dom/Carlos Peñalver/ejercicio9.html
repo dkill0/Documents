@@ -19,25 +19,37 @@
     <button onclick="elimina()">Eliminar eventos</button>
 
     <script>
+        //Se guarda el elemento
         let texto = document.getElementById("texto");
+
+        //Funcion que muestra un alert con el texto que hay en el div
         function mensaje() {
 
             alert(texto.innerHTML);
         }
+
+        //Esta funcion añade un evento para cuando se pasa el raton sobre el texto
         function cambia() {
 
             texto.setAttribute("onmouseover", "cambiaC()");
         }
+
+        //Esta funcion añade un evento para cuando el raton deja de estar sobre el texto
         function original() {
             texto.setAttribute("onmouseout", "vuelveC()");
         }
+
+        //Esta funcion elimina los eventos creados
         function elimina() {
             texto.removeAttribute("onmouseover");
             texto.removeAttribute("onmouseout");
         }
+
+        //Se ejecuta cuando se añade el evento onmouseover
         function cambiaC() {
             texto.style.color = "pink";
         }
+        //Se ejecuta cuando se añade el evento onmouseout
         function vuelveC() {
             texto.style.color = "black";
         }
