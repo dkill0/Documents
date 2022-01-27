@@ -4,16 +4,16 @@
     <libro>
         <titulo>Lágrimas de lluvia</titulo>
         <autor>Rosa Montero</autor>
-        <fechaPublicacion año="2011"/>
+        <fechaPublicacion> 2011 </fechaPublicacion>
     </libro>
     <libro>
         <titulo>Sin noticias de Gurb</titulo>
         <autor fechaNacimiento="11/01/1943">Eduardo Mendoza</autor>
-        <fechaPublicacion año="1991"/>
+        <fechaPublicacion>1991</fechaPublicacion>
     </libro>
     <libro>
         <titulo>La sombra del aguila</titulo>
         <autor fechaNacimiento="25/11/1951">Arturo Perez-Reverte</autor>
-        <fechaPublicacion año="1993"/>
+        <fechaPublicacion>1993</fechaPublicacion>
     </libro>
 </biblioteca>

@@ -1,0 +1,40 @@
+grado {
+    display: block;
+    margin: 10px
+}
+
+titulo,
+tipo {
+    display: block;
+    text-align: center;
+}
+
+modulos {
+    display: table;
+    padding: 3px;
+    border: 1px solid grey;
+}
+
+materia {
+    display: table-row;
+    padding: 4px;
+}
+
+nombre {
+    display: table-cell;
+    background-color: rgb(182, 180, 180);
+    padding: 6px;
+    border: 1px solid grey;
+}
+
+curso {
+    display: table-cell;
+    padding: 6px;
+    border: 1px solid grey;
+}
+
+horasSemanales {
+    display: table-cell;
+    padding: 6px;
+    border: 1px solid grey;
+}
