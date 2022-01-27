@@ -1,6 +1,5 @@
 grado {
-    display: block;
-    margin: 10px
+    font-family: sans-serif;
 }
 
 titulo,
@@ -11,30 +10,32 @@ tipo {
 
 modulos {
     display: table;
-    padding: 3px;
     border: 1px solid grey;
+    border-spacing: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
 }
 
 materia {
     display: table-row;
-    padding: 4px;
 }
 
 nombre {
     display: table-cell;
     background-color: rgb(182, 180, 180);
-    padding: 6px;
+    padding: 10px;
     border: 1px solid grey;
 }
 
 curso {
     display: table-cell;
-    padding: 6px;
+    padding: 10px;
     border: 1px solid grey;
 }
 
 horasSemanales {
     display: table-cell;
-    padding: 6px;
+    padding: 10px;
     border: 1px solid grey;
 }

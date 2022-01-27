@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="estilos2.css" type="text/css"?>
 <grado>
-    <grado1>
+    
         <titulo>Desarrollo Aplicaciones web</titulo>
         <tipo>Ciclo Formativo de Grado Superior</tipo>
-    </grado1>
+    
     <modulos>
         <materia>
             <nombre>Entornos de Desarrollo</nombre>
