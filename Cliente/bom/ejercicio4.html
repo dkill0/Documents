@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+
 <body>
-	<select name="" id="busca">
-		<option value=”http://www.ces-vegamedia.es”>CES Vega Media</option>
-		<option value=”https://www.pccomponentes.com/”>Pc Componentes</option>
-		<option value=”www.lingscars.com/”>Sorpresa</option>
+    <select name="" id="busca">
+		<option value=http://www.ces-vegamedia.es>CES Vega Media</option>
+		<option value=https://www.pccomponentes.com>Pc Componentes</option>
+		<option value=https://www.lingscars.com>Sorpresa</option>
 	</select>
-	<button onclick="busca()">Aceptar</button>
+    <button onclick="busca()">Aceptar</button>
 
-	<script>
-		var ventana;
-		function busca() {
+    <script>
+        function busca() {
 
-		var opcion= document.getElementById('busca').value;
-
-
-		ventana=window.open(opcion);
-		}
-	</script>
+            var opcion = document.getElementById('busca').value;
+            let ventana = window.open(opcion);
+        }
+    </script>
 </body>
+
 </html>

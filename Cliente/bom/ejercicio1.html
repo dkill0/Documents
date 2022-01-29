@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=, initial-scale=1.0">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
 </head>
+
 <body>
-	
-	<button onclick="boton1()">Abrir la pagina</button>
-	<button onclick="boton2()">Cambiar tamaño</button>
-	<button onclick="boton3()">Mover a la derecha</button>
-	<button onclick="boton4()">Cerrar la pagina</button>
 
-	<script>
-		var ventana;
-		function boton1() {
-			
-   		ventana = window.open("https://www.ces-vegamedia.es", "","width=100,height=100");
-		}
+    <button onclick="boton1()">Abrir la pagina</button>
+    <button onclick="boton2()">Cambiar tamaño</button>
+    <button onclick="boton3()">Mover a la derecha</button>
+    <button onclick="boton4()">Cerrar la pagina</button>
 
-			function boton2() {
-  		ventana.resizeTo(500, 500);
-  		ventana.focus();
-		}
+    <script>
+        var ventana;
 
-			function boton3() {
-   		ventana.moveTo(1000, 100); 
-  		ventana.focus();           
-		}
+        function boton1() {
 
-			function boton4() {
-  		ventana.close(); 
-		}
-	</script>
-	
+            ventana = window.open("https://www.ces-vegamedia.es", "", "width=100,height=100");
+        }
+
+        function boton2() {
+            ventana.resizeTo(500, 500);
+            ventana.focus();
+        }
+
+        function boton3() {
+            ventana.moveTo(1000, 100);
+            ventana.focus();
+        }
+
+        function boton4() {
+            ventana.close();
+        }
+    </script>
+
 </body>
+
 </html>

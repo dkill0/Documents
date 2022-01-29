@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Cookies:</h3>
+    <p id="cukis"></p>
+    <h3>AppCodeName:</h3>
+    <p id="apcode"></p>
+    <h3>Version:</h3>
+    <p id="version"></p>
+    <h3>Sistema operativo:</h3>
+    <p id="sistema"></p>
+    <h3>Idioma:</h3>
+    <p id="idioma"></p>
+    <h3>Online:</h3>
+    <p id="online"></p>
+    <h3>Java habilitado:</h3>
+    <p id="java"></p>
+    <script>
+        let activada;
+        if (navigator.cookieEnabled == true) {
+            activada = "Las cookies estan habilitadas.";
+        } else {
+            activada = "Las cookies no están habilitadas.";
+        }
+        document.getElementById("cukis").innerHTML = activada;
+
+        document.getElementById("apcode").innerHTML = navigator.appCodeName;
+
+        document.getElementById("version").innerHTML = navigator.appVersion;
+        document.getElementById("sistema").innerHTML = navigator.platform;
+        document.getElementById("idioma").innerHTML = navigator.language;
+        document.getElementById("online").innerHTML = navigator.onLine;
+        document.getElementById("java").innerHTML = navigator.javaEnabled();
+    </script>
+</body>
+
+</html>
