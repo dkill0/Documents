@@ -15,24 +15,28 @@
     <button onclick="boton4()">Cerrar la pagina</button>
 
     <script>
+        //Se crea la variable
         var ventana;
 
+        //Boton que abre una ventana con una url y un tamaño predeterminado
         function boton1() {
-
             ventana = window.open("https://www.ces-vegamedia.es", "", "width=100,height=100");
             ventana.focus();
         }
 
+        //Boton que redimensiona la ventana
         function boton2() {
             ventana.resizeTo(500, 500);
             ventana.focus();
         }
 
+        //Boton que mueve la ventana a la derecha
         function boton3() {
             ventana.moveTo(1000, 100);
             ventana.focus();
         }
 
+        //Boton que cierra la ventana
         function boton4() {
             ventana.close();
         }

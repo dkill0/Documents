@@ -17,6 +17,7 @@
     <button onclick="nuevaVent()">Nueva ventana</button>
 
     <script>
+        //Se crean las variables y se muestran por pantalla
         var nuevaVentana;
         var ancho = screen.width;
         var alto = screen.height;
@@ -32,7 +33,7 @@
         document.getElementById("profunPixel").innerHTML =
             "Profundidad del pixel: " + profunPixel;
 
-
+        //Boton que abre una nueva ventana con la mitad del tamaño de la ventana padre
         function nuevaVent() {
             var anchoHij = ancho / 2;
 
