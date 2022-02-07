@@ -1,0 +1,56 @@
+let conta = 0;
+let turno = "jugador";
+setInterval(sith(), 10);
+
+function cambia(nombre) {
+    if (turno === "jugador") {
+        let imagen = document.getElementById(nombre);
+        imagen.src = "./img/jedi.png";
+        conta++;
+        turno = "maquina";
+        console.log(turno);
+        //metodo que edita el css, inabilitando los eventos 
+        imagen.style.pointerEvents = "none";
+    } else {
+        //sith();
+    }
+}
+
+const imagenesTotales = document.getElementsByTagName("img");
+
+function reinicia(nombre2) {
+    let nombreFinal;
+
+    turno = "jugador";
+    conta = 0;
+
+    for (let i = 1; i <= imagenesTotales.length; i++) {
+        nombreFinal = nombre2 + i;
+
+        document.getElementById(nombreFinal).src = "./img/elige.png";
+        //metodo que edita el css, habilitando los eventos
+        document.getElementById(nombreFinal).style.pointerEvents = "auto";
+
+    }
+}
+
+
+
+function sid() {
+    if (turno === "maquina") {
+
+        let aleatorio;
+        console.log(imagenesTotales.length);
+        aleatorio = Math.floor(Math.random() * (imagenesTotales.length));
+        let nombre = "img" + aleatorio;
+        let imagen = document.getElementById(nombre);
+
+        if (imagen.src = "./img/elige.png") {
+            imagen.src = "./img/sith.png";
+            turno = "jugador";
+            console.log(turno);
+        }
+
+    }
+
+}

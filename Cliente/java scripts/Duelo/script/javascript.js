@@ -78,6 +78,7 @@
         document.getElementById(nombreMasc).innerHTML = mascotas[numMasc2].nom;
         document.getElementById(razaMasc).innerHTML = mascotas[numMasc2].raza;
         document.getElementById(imagen).src = mascotas[numMasc2].img;
+		console.log(mascotas[numMasc2].img);
         //Una vez colocado el objeto se elimina este del array para que no vuelva a salir
         mascotas.splice(numMasc2,1);
         //Se acumula de 2 en 2

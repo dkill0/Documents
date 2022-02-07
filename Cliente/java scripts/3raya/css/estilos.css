@@ -1,0 +1,25 @@
+td.izquierda {
+    border-right: 1px solid black;
+}
+
+td.derecha {
+    border-left: 1px solid black;
+}
+
+tr.linea {
+    border-top: 1px solid black;
+}
+
+body {
+    text-align: center;
+}
+
+table {
+    width: 500px;
+    height: 500px;
+}
+
+img.fichas {
+    width: 150px;
+    height: 150px;
+}
