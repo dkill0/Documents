@@ -1,12 +1,15 @@
+const tablero = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 const imagenesTotales = document.getElementsByTagName("img");
 let conta = 0;
 
 function cambia(nombre) {
-
+    posicion = nombre.substr(3);
     let imagen = document.getElementById(nombre);
     imagen.src = "./img/jedi.png";
     conta++;
     imagen.style.pointerEvents = "none";
+    tablero.splice(posicion, 0);
+
     //metodo que edita el css, inhabilitando los eventos 
     setTimeout(sid, 1000);
 }
@@ -21,19 +24,20 @@ function reinicia(nombre2) {
         //metodo que edita el css, habilitando los eventos
         document.getElementById(nombreFinal).style.pointerEvents = "auto";
     }
+    tablero = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 }
 
 function sid() {
     let aleatorio;
-    aleatorio = Math.floor(Math.random() * (imagenesTotales.length) +
+    aleatorio = Math.floor(Math.random() * (tablero.length) +
         1);
+
     let nombre2 = "img" + aleatorio;
-    console.log(aleatorio);
-    console.log(nombre2);
     let imagen2 = document.getElementById(nombre2);
 
-    if ((imagen2.src != "./img/jedi.png")) {
-        imagen2.src = "./img/sith.png";
-        imagen2.style.pointerEvents = "none";
-    }
+
+    imagen2.src = "./img/sith.png";
+    imagen2.style.pointerEvents = "none";
+
+    tablero.splice(aleatorio, 0);
 }
