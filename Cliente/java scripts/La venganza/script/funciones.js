@@ -22,7 +22,7 @@ function cambia(nombre) {
         let celda = imagen.className.substring(6);
         //metodo que edita el css, inhabilitando los eventos 
         if (comprueba(celda, "jugador")) {
-            reinicia();
+            fin("jugador");
         } else {
 
             setTimeout(sid, 1000);
@@ -34,6 +34,7 @@ function reinicia() {
     let nombre2 = "img";
     let nombreFinal;
     conta = 0;
+    turno = 0;
     for (let i = 1; i <= imagenesTotales.length; i++) {
         nombreFinal = nombre2 + i;
 
@@ -42,6 +43,12 @@ function reinicia() {
         document.getElementById(nombreFinal).style.pointerEvents = "auto";
     }
     tablero = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+    posicionesA = [0, 0, 0, 0];
+    posicionesB = [0, 0, 0, 0];
+    posicionesC = [0, 0, 0, 0];
+    posicionesD = [0, 0, 0, 0];
+    jugadas = [];
+
 
 }
 
@@ -61,92 +68,326 @@ function sid() {
 
         turno = 0;
         if (comprueba(celda, "maquina")) {
-            reinicia();
+            fin("maquina");
         }
 
     }
 }
 
-let matriz = [];
+let jugadas = [];
+let posicionesA = [0, 0, 0, 0];
+let posicionesB = [0, 0, 0, 0];
+let posicionesC = [0, 0, 0, 0];
+let posicionesD = [0, 0, 0, 0];
 
 
 function comprueba(celda, tipo) {
+
+
     let posi = celda + tipo;
-    matriz.push(posi);
-    console.log(matriz);
+    jugadas.push(posi);
+    if (jugadas.length >= 7) {
 
-    let lineaAPers = 0;
-    let lineaBPers = 0;
-    let lineaCPers = 0;
-    let lineaDPers = 0;
-    let lineaAMaq = 0;
-    let lineaBMaq = 0;
-    let lineaCMaq = 0;
-    let lineaDMaq = 0;
+        let letra = "";
+        let numero;
+        let jugador;
+        for (let i = 0; i < jugadas.length; i++) {
+            letra = jugadas[i].substring(2, 3);
+            numero = jugadas[i].substring(1, 2);
+            jugador = jugadas[i].substr(3);
+
+            switch (letra) {
+                case "a":
+                    switch (numero) {
+                        case "1":
+                            if (jugador === "jugador") {
+                                posicionesA[0] = 1;
+
+                            } else {
+                                posicionesA[0] = 2;
+                            }
+                            break;
+                        case "2":
+                            if (jugador === "jugador") {
+                                posicionesA[1] = 1;
+
+                            } else {
+                                posicionesA[1] = 2;
+                            }
+                            break;
+                        case "3":
+                            if (jugador === "jugador") {
+                                posicionesA[2] = 1;
+
+                            } else {
+                                posicionesA[2] = 2;
+                            }
+                            break;
+                        case "4":
+                            if (jugador === "jugador") {
+                                posicionesA[3] = 1;
+
+                            } else {
+                                posicionesA[3] = 2;
+                            }
+                            break;
+
+                        default:
+                            break;
+                    }
 
 
-    let columPers = 0;
-    let columMaq = 0;
-    let diagonalPers = 0;
-    let diagonalMaq = 0;
-    for (let i = 0; i < matriz.length; i++) {
-        if (matriz[i].lastIndexOf("jugador") != (-1)) {
+                    break;
+                case "b":
+                    switch (numero) {
+                        case "1":
+                            if (jugador === "jugador") {
+                                posicionesB[0] = 1;
 
-            if (matriz[i].indexOf("a") != (-1)) {
-                lineaAPers++;
-            } else if (matriz[i].indexOf("b") != (-1)) {
-                lineaBPers++;
-            } else if (matriz[i].indexOf("c") != (-1)) {
-                lineaCPers++;
-            } else if (matriz[i].indexOf("d") != (-1)) {
-                lineaDPers++;
+                            } else {
+                                posicionesB[0] = 2;
+                            }
+                            break;
+                        case "2":
+                            if (jugador === "jugador") {
+                                posicionesB[1] = 1;
+
+                            } else {
+                                posicionesB[1] = 2;
+                            }
+                            break;
+                        case "3":
+                            if (jugador === "jugador") {
+                                posicionesB[2] = 1;
+
+                            } else {
+                                posicionesB[2] = 2;
+                            }
+                            break;
+                        case "4":
+                            if (jugador === "jugador") {
+                                posicionesB[3] = 1;
+
+                            } else {
+                                posicionesB[3] = 2;
+                            }
+                            break;
+
+                        default:
+                            break;
+                    }
+                    break
+                case "c":
+                    switch (numero) {
+                        case "1":
+                            if (jugador === "jugador") {
+                                posicionesC[0] = 1;
+
+                            } else {
+                                posicionesC[0] = 2;
+                            }
+                            break;
+                        case "2":
+                            if (jugador === "jugador") {
+                                posicionesC[1] = 1;
+
+                            } else {
+                                posicionesC[1] = 2;
+                            }
+                            break;
+                        case "3":
+                            if (jugador === "jugador") {
+                                posicionesC[2] = 1;
+
+                            } else {
+                                posicionesC[2] = 2;
+                            }
+                            break;
+                        case "4":
+                            if (jugador === "jugador") {
+                                posicionesC[3] = 1;
+
+                            } else {
+                                posicionesC[3] = 2;
+                            }
+                            break;
+
+                        default:
+                            break;
+                    }
+                    break
+                case "d":
+                    switch (numero) {
+                        case "1":
+                            if (jugador === "jugador") {
+                                posicionesD[0] = 1;
+
+                            } else {
+                                posicionesD[0] = 2;
+                            }
+                            break;
+                        case "2":
+                            if (jugador === "jugador") {
+                                posicionesD[1] = 1;
+
+                            } else {
+                                posicionesD[1] = 2;
+                            }
+                            break;
+                        case "3":
+                            if (jugador === "jugador") {
+                                posicionesD[2] = 1;
+
+                            } else {
+                                posicionesD[2] = 2;
+                            }
+                            break;
+                        case "4":
+                            if (jugador === "jugador") {
+                                posicionesD[3] = 1;
+
+                            } else {
+                                posicionesD[3] = 2;
+                            }
+                            break;
+
+                        default:
+                            break;
+                    }
+                    break
+
+                default:
+                    break;
             }
-        } else if (matriz[i].lastIndexOf("maquina") != (-1)) {
-            if (matriz[i].indexOf("a") != (-1)) {
-                lineaAMaq++;
-            } else if (matriz[i].indexOf("b") != (-1)) {
-                lineaBMaq++;
-            } else if (matriz[i].indexOf("c") != (-1)) {
-                lineaCMaq++;
-            } else if (matriz[i].indexOf("d") != (-1)) {
-                lineaDMaq++;
+
+
+
+
+
+        }
+        console.log(posicionesA);
+        console.log(posicionesB);
+        console.log(posicionesC);
+        console.log(posicionesD);
+        for (let i = 0; i < 4; i++) {
+
+            //Comprobacion de las verticales
+            if ((posicionesA[i] === 1) && (posicionesB[i] === 1) && (posicionesC[i] === 1) && (posicionesD[i] === 1)) {
+
+                return true;
+
+            } else if ((posicionesA[i] === 2) && (posicionesB[i] === 2) && (posicionesC[i] === 2) && (posicionesD[i] === 2)) {
+                return true;
             }
         }
-    }
+
+        //Comprobacion de las horizontales
+        let vecesJ = 0;
+        let vecesM = 0;
 
 
-    if ((lineaAPers === 4) || (lineaBPers === 4) || (lineaCPers === 4) || (lineaDPers === 4)) {
-        console.log("linea ! xd");
-        lineaAPers = 0;
-        lineaBPers = 0;
-        lineaCPers = 0;
-        lineaDPers = 0;
-        lineaAMaq = 0;
-        lineaBMaq = 0;
-        lineaCMaq = 0;
-        lineaDMaq = 0;
-        alert("has ganado");
-        return true;
+        for (let i = 0; i < posicionesA.length; i++) {
+
+            if (posicionesA[i] === 1) {
+                vecesJ++;
+            } else if (posicionesA[i] === 2) {
+                vecesM++;
+            }
+
+        }
+
+        if (vecesJ === 4) {
+            return true;
+        } else if (vecesM === 4) {
+            return true;
+        }
+        vecesJ = 0;
+        vecesM = 0;
 
 
-    } else if ((lineaAMaq === 4) || (lineaBMaq === 4) || (lineaCMaq === 4) || (lineaDMaq === 4)) {
-        console.log("linea maquina");
-        lineaAPers = 0;
-        lineaBPers = 0;
-        lineaCPers = 0;
-        lineaDPers = 0;
-        lineaAMaq = 0;
-        lineaBMaq = 0;
-        lineaCMaq = 0;
-        lineaDMaq = 0;
-        return true;
+        for (let i = 0; i < posicionesB.length; i++) {
+
+            if (posicionesB[i] === 1) {
+                vecesJ++;
+            } else if (posicionesB[i] === 2) {
+                vecesM++;
+            }
+
+        }
+
+        if (vecesJ === 4) {
+            return true;
+        } else if (vecesM === 4) {
+            return true;
+        }
+        vecesJ = 0;
+        vecesM = 0;
+
+
+        for (let i = 0; i < posicionesC.length; i++) {
+
+            if (posicionesC[i] === 1) {
+                vecesJ++;
+            } else if (posicionesC[i] === 2) {
+                vecesM++;
+            }
+
+        }
+
+        if (vecesJ === 4) {
+            return true;
+        } else if (vecesM === 4) {
+            return true;
+        }
+        vecesJ = 0;
+        vecesM = 0;
+
+
+        for (let i = 0; i < posicionesD.length; i++) {
+
+            if (posicionesD[i] === 1) {
+                vecesJ++;
+            } else if (posicionesD[i] === 2) {
+                vecesM++;
+            }
+
+        }
+
+        if (vecesJ === 4) {
+            return true;
+        } else if (vecesM === 4) {
+            return true;
+        }
+
+
+        //Comprobacion diagonales
+
+        if ((posicionesA[0] === 1) && (posicionesB[1] === 1) && (posicionesC[2] === 1) && (posicionesD[3] === 1)) {
+
+            return true;
+
+        } else if ((posicionesA[0] === 2) && (posicionesB[1] === 2) && (posicionesC[2] === 2) && (posicionesD[3] === 2)) {
+            return true;
+        }
+
+        if ((posicionesD[0] === 1) && (posicionesC[1] === 1) && (posicionesB[2] === 1) && (posicionesA[3] === 1)) {
+
+            return true;
+
+        } else if ((posicionesD[0] === 2) && (posicionesC[1] === 2) && (posicionesB[2] === 2) && (posicionesA[3] === 2)) {
+            return true;
+        }
     } else {
         return false;
     }
 
-
 }
 
-function fin() {
 
+
+
+
+
+function fin(ganador) {
+    console.log(ganador);
 }
