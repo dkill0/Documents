@@ -1,20 +1,39 @@
 td.izquierda {
-    border-right: 1px solid black;
+    border-right: 1px solid white;
 }
 
 td.derecha {
-    border-left: 1px solid black;
+    border-left: 1px solid white;
 }
 
 tr.linea {
-    border-top: 1px solid black;
+    border-top: 1px solid white;
 }
 
 body {
     text-align: center;
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 table {
     width: 500px;
     height: 500px;
+}
+
+h1 {
+    font-family: Jedi;
+    font-size: 4em;
+    color: yellow;
+}
+
+@font-face {
+    font-family: 'Jedi';
+    src: url('./STARWARS.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
 }
