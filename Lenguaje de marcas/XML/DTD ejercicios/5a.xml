@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nota SYSTEM "nota.dtd">
+<nota>
+<para>Antonio</para>
+<para>Ana</para>
+<de>Amparo</de>
+<titulo>Recordatorio</titulo>
+<contenido>A las 18:00 en la puerta del cine</contenido>
+</nota>

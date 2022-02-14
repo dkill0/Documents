@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listado SYSTEM "listado.dtd">
+<listado>
+<persona>
+<nombre>Antonio López</nombre>
+<fecha_nacimiento>28-02-2001</fecha_nacimiento>
+<desempleado/>
+</persona>
+<persona>
+<nombre>Amparo Pérez</nombre>
+<fecha_nacimiento>21-06-2002</fecha_nacimiento>
+</persona>
+</listado>
