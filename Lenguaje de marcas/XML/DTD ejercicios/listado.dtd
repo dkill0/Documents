@@ -1,0 +1,5 @@
+<!ELEMENT listado (persona)*>
+<!ELEMENT persona (nombre, fecha_nacimiento, desempleado?)>
+<!ELEMENT nombre (#PCDATA )>
+<!ELEMENT fecha_nacimiento (#PCDATA )>
+<!ELEMENT desempleado  EMPTY>

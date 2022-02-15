@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ligaFutbol SYSTEM "furgol.dtd">
+<ligaFutbol>
+<partido>
+<equipoL goles="2">Real Madrid</equipoL>
+ <equipoV goles="0">Valencia C.F</equipoV>
+</partido>
+<partido>
+<equipoL goles="3">Atlético Madrid</equipoL>
+ <equipoV goles="3">F.C. Barcelona</equipoV>
+</partido>
+<partido>
+<equipoL goles="2">Real Betis</equipoL>
+ <equipoV goles="1">Sevilla F.C.</equipoV>
+</partido>
+<partido>
+<equipoL goles="1">Real Sociedad</equipoL>
+ <equipoV goles="2">Athletic Bilbao</equipoV>
+</partido>
+ 
+</ligaFutbol>

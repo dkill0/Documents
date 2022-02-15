@@ -1,0 +1,6 @@
+<!ELEMENT ligaFutbol (partido+)>
+<!ELEMENT partido (equipoL, equipoV)>
+<!ATTLIST equipoL goles CDATA #REQUIRED>
+<!ATTLIST equipoV goles CDATA #REQUIRED>
+<!ELEMENT equipoL (#PCDATA)>
+<!ELEMENT equipoV (#PCDATA)>
