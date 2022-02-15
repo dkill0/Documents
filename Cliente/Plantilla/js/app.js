@@ -27,10 +27,14 @@ function pintaCard(vecino) {
     const clone = template.cloneNode(true);
     const fragment = document.createDocumentFragment();
     clone.querySelector('.card-body-img').setAttribute('src', vecino.image_uri);
-    clone.querySelector('.card-body-title').innerHTML = `${vecino.name[0]}`;
-
+    clone.querySelector('.card-body-title').innerHTML = `${vecino.name["name-USen"]}`;
     clone.querySelector('.card-body-text').innerHTML = `"${vecino.saying}"`;
-    //clone.querySelectorAll(".card-footer.social h4")[0].textContent = vecino.personality;
+
+
+    clone.querySelectorAll(".card-footer-social h4")[0].textContent = vecino.personality;
+    clone.querySelectorAll(".card-footer-social h4")[1].textContent = vecino.birthday;
+    clone.querySelectorAll(".card-footer-social h4")[2].textContent = vecino.gender;
+
     fragment.appendChild(clone);
     flex.appendChild(fragment);
 }
