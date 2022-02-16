@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/estilos.css">
-    <script src="./js/app.js"></script>
+    <script src="./js/app2.js"></script>
 </head>
 
 <body>
@@ -21,8 +21,7 @@
 
         <div class="col-6 text-center">
             <select style="height: 50px; font-size:large;" onchange="fetchData(value)" class="form-select" name="tipo" id="tipo">
-                <option value="Snooty">Presumida</option>
-                <option value="Smug">Presumido</option>
+                
                 <option value="Cranky">Malhumorado</option>
                 <option value="Uchi">Dulce</option>
                 <option value="Normal">Normal</option>
@@ -31,15 +30,15 @@
                 <option value="Jock">Deportista</option>
                 
             </select>
-            <button class="btn btn-primary" onclick="init()">Buscar</button>
             <br>
         </div>
     </div>
     <main class="flex">
 
     </main>
-    <template id="template-card">
-            <article class="card">
+
+    <template class="row" id="template-card">
+            <div class="card col-12 col-md-5 col-lg-4">
                 <img src="./images/bg-pattern-card.svg" alt="imagen header card" class="card-header">
                 <div class="card-body">
                     <img src="./images/image-fernando.jpg" alt="imagen de Fernando" class="card-body-img">
@@ -63,8 +62,9 @@
                         <h4>t</h4>
                     </div>
                 </div>
-            </article>
+            </div>
         </template>
+
 </body>
 
 </html>
