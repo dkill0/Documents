@@ -5,13 +5,15 @@ function getRandomInt(min, max) {
 document.addEventListener('DOMContentLoaded', init);
 
 function init() {
-    const aleatorio = getRandomInt(1, 299);
-    fetchData(aleatorio);
+    const selectElement = document.querySelector('.tipo');
+    selectElement.addEventListener('change', (event) => {
+        fetchData(`${event.target.value}`);
+    });
 }
 
-async function fetchData(id) {
+async function fetchData(opcion) {
     try {
-        const res = await fetch("http://acnhapi.com/v1/villagers/" + id);
+        const res = await fetch("http://acnhapi.com/v1/villagers/" + opcion);
         const data = await res.json();
         pintaCard(data);
     } catch (error) {

@@ -17,7 +17,26 @@
 </head>
 
 <body>
-    <main class="flex"></main>
+    <div class="row justify-content-center">
+
+        <div class="col-6 text-center">
+            <select style="height: 50px; font-size:large;" onchange="fetchData(value)" class="form-select" name="tipo" id="tipo">
+                <option value="Snooty">Presumida</option>
+                <option value="Smug">Presumido</option>
+                <option value="Cranky">Malhumorado</option>
+                <option value="Uchi">Dulce</option>
+                <option value="Normal">Normal</option>
+                <option value="Lazy">Perezoso</option>
+                <option value="Peppy">Energético</option>
+                <option value="Jock">Deportista</option>
+                
+            </select>
+            <br>
+        </div>
+    </div>
+    <main class="flex">
+
+    </main>
     <template id="template-card">
             <article class="card">
                 <img src="./images/bg-pattern-card.svg" alt="imagen header card" class="card-header">
