@@ -8,16 +8,14 @@ function init() {
 
 }
 
-function elimina() {
-
-}
-
 async function fetchData(opcion) {
     try {
         let count = 0;
         let aleatorio;
         let res;
         let data;
+		const flex =  document.querySelector('#imprime');
+		flex.innerHTML = "";
         do {
             aleatorio = getRandomInt(1, 300);
             res = await fetch("http://acnhapi.com/v1/villagers/" + aleatorio);
@@ -43,9 +41,9 @@ function pintaCard(vecino) {
     clone.querySelector('.card-img').setAttribute('src', vecino.image_uri);
     clone.querySelector('.card-title').innerHTML = `${vecino.name["name-USen"]}`;
     clone.querySelector('.card-text').innerHTML = `"${vecino.saying}"`;
-    clone.querySelectorAll(".card-footer h4")[0].textContent = vecino.personality;
-    clone.querySelectorAll(".card-footer h4")[1].textContent = vecino.birthday;
-    clone.querySelectorAll(".card-footer h4")[2].textContent = vecino.gender;
+    clone.querySelectorAll(".col-4 p")[0].textContent = vecino.personality;
+    clone.querySelectorAll(".col-4 p")[1].textContent = vecino.birthday;
+    clone.querySelectorAll(".col-4 p")[2].textContent = vecino.gender;
 
 
     fragment.appendChild(clone);

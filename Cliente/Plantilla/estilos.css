@@ -1,0 +1,17 @@
+body {
+    background-image: url("./images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h2 {
+    font-family: Finkheavy;
+}
+
+@font-face {
+    font-family: 'Finkheavy';
+    src: url('./finkheavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
