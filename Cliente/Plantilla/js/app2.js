@@ -3,8 +3,12 @@ function getRandomInt(min, max) {
 }
 
 function init() {
-    let opcion = document.getElementsByClassName(".tipo").value;
+    let opcion = document.getElementById("tipo").value;
     fetchData(opcion);
+
+}
+
+function elimina() {
 
 }
 
@@ -30,18 +34,21 @@ async function fetchData(opcion) {
 }
 
 function pintaCard(vecino) {
-
-    const flex = document.querySelector('.flex');
+    const flex = document.querySelector('#imprime');
     const template = document.querySelector('#template-card').content;
     const clone = template.cloneNode(true);
+
     const fragment = document.createDocumentFragment();
-    clone.querySelector('.card-body-img').setAttribute('src', vecino.image_uri);
-    clone.querySelector('.card-body-title').innerHTML = `${vecino.name["name-USen"]}`;
-    clone.querySelector('.card-body-text').innerHTML = `"${vecino.saying}"`;
-    clone.querySelectorAll(".card-footer-social h4")[0].textContent = vecino.personality;
-    clone.querySelectorAll(".card-footer-social h4")[1].textContent = vecino.birthday;
-    clone.querySelectorAll(".card-footer-social h4")[2].textContent = vecino.gender;
+
+    clone.querySelector('.card-img').setAttribute('src', vecino.image_uri);
+    clone.querySelector('.card-title').innerHTML = `${vecino.name["name-USen"]}`;
+    clone.querySelector('.card-text').innerHTML = `"${vecino.saying}"`;
+    clone.querySelectorAll(".card-footer h4")[0].textContent = vecino.personality;
+    clone.querySelectorAll(".card-footer h4")[1].textContent = vecino.birthday;
+    clone.querySelectorAll(".card-footer h4")[2].textContent = vecino.gender;
+
 
     fragment.appendChild(clone);
     flex.appendChild(fragment);
+
 }
