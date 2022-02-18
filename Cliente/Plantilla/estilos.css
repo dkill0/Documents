@@ -5,13 +5,14 @@ body {
     background-attachment: fixed;
 }
 
-h2 {
-    font-family: Finkheavy;
+h1 {
+    font-family: animal;
+	font-size: 3em;
 }
 
 @font-face {
-    font-family: 'Finkheavy';
-    src: url('./finkheavy.ttf') format('truetype');
+    font-family: 'animal';
+    src: url('./Hattrick.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
