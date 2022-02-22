@@ -2,19 +2,19 @@
 <?xml-stylesheet href="estilos.css" type="text/css"?>
 <biblioteca>
     <libro>
-        <titulo>Lágrimas de lluvia</titulo>
+        <titulo cod="L1">Lágrimas de lluvia</titulo>
         <autor>Rosa Montero</autor>
-        <fechaPublicacion> 2011 </fechaPublicacion>
+        <fechaPublicacion > 2011 </fechaPublicacion>
     </libro>
 
     <libro>
-        <titulo>Sin noticias de Gurb</titulo>
-        <autor fechaNacimiento="11/01/1943">Eduardo Mendoza</autor>
+        <titulo cod="L2">Sin noticias de Gurb</titulo>
+        <autor >Eduardo Mendoza</autor>
         <fechaPublicacion>1991</fechaPublicacion>
     </libro>
     <libro>
-        <titulo>La sombra del aguila</titulo>
-        <autor fechaNacimiento="25/11/1951">Arturo Perez-Reverte</autor>
+        <titulo cod="L3">La sombra del aguila</titulo>
+        <autor >Arturo Perez-Reverte</autor>
         <fechaPublicacion>1993</fechaPublicacion>
     </libro>
 </biblioteca>
