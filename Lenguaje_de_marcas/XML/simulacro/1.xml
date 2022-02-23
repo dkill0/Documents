@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE paises[
+<!ELEMENT paises (pais+)>
+<!ELEMENT pais (sistema, superficie, idioma)>
+<!ATTLIST pais
+          nombre CDATA #REQUIRED>
+<!ELEMENT sistema (#PCDATA)>
+<!ELEMENT superficie (#PCDATA)>
+<!ELEMENT idioma (#PCDATA)>
+
+]>
+
+<paises>
+<pais nombre="España">
+<sistema>Monarquia</sistema> 
+<superficie>504645</superficie>
+<idioma>Español</idioma>
+</pais>
+<pais nombre="Francia">
+<sistema>Republica</sistema> 
+<superficie>675417</superficie>
+<idioma>Frances</idioma>
+</pais>
+<pais nombre="Suiza">
+<sistema>Republica</sistema> 
+<superficie>41290</superficie>
+<idioma>Frances</idioma>
+</pais>
+<pais nombre="Argentina">
+<sistema>Republica</sistema> 
+<superficie>2780400</superficie>
+<idioma>Español</idioma>
+</pais>
+</paises>
