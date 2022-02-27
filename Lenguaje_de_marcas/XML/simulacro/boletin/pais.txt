@@ -1,0 +1,92 @@
+package xml;
+
+public class Pais {
+	String nombre;
+	String sistema;
+	int superficie;
+	String moneda;
+	String idioma;
+	/**
+	 * @param nombre
+	 * @param sistema
+	 * @param superficie
+	 * @param moneda
+	 * @param idioma
+	 */
+	public Pais(String nombre, String sistema, int superficie, String moneda, String idioma) {
+		super();
+		this.nombre = nombre;
+		this.sistema = sistema;
+		this.superficie = superficie;
+		this.moneda = moneda;
+		this.idioma = idioma;
+	}
+	/**
+	 * @return el nombre
+	 */
+	public String getNombre() {
+		return nombre;
+	}
+	/**
+	 * @param nombre el nombre a establecer
+	 */
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	/**
+	 * @return el sistema
+	 */
+	public String getSistema() {
+		return sistema;
+	}
+	/**
+	 * @param sistema el sistema a establecer
+	 */
+	public void setSistema(String sistema) {
+		this.sistema = sistema;
+	}
+	/**
+	 * @return el superficie
+	 */
+	public int getSuperficie() {
+		return superficie;
+	}
+	/**
+	 * @param superficie el superficie a establecer
+	 */
+	public void setSuperficie(int superficie) {
+		this.superficie = superficie;
+	}
+	/**
+	 * @return el moneda
+	 */
+	public String getMoneda() {
+		return moneda;
+	}
+	/**
+	 * @param moneda el moneda a establecer
+	 */
+	public void setMoneda(String moneda) {
+		this.moneda = moneda;
+	}
+	/**
+	 * @return el idioma
+	 */
+	public String getIdioma() {
+		return idioma;
+	}
+	/**
+	 * @param idioma el idioma a establecer
+	 */
+	public void setIdioma(String idioma) {
+		this.idioma = idioma;
+	}
+	@Override
+	public String toString() {
+		return "Pais [nombre=" + nombre + ", sistema=" + sistema + ", superficie=" + superficie + ", moneda=" + moneda
+				+ ", idioma=" + idioma + "]";
+	}
+	
+	
+
+}

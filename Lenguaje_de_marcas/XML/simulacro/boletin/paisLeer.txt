@@ -1,0 +1,43 @@
+package xml;
+
+import java.io.File;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import org.w3c.dom.*;
+
+public class testPaises {
+
+	public static void main(String[] args) {
+		try {
+			File archivo = new File("C:/Users/cpalo/OneDrive/Escritorio/boletin/1.xml");
+			DocumentBuilderFactory dbf = DocumentBuilderFactory.newDefaultInstance();
+			DocumentBuilder dB = dbf.newDocumentBuilder();
+			Document doc = dB.parse(archivo);
+
+			NodeList nPaises = doc.getElementsByTagName("pais");
+
+			Pais listaPaises[] = new Pais[nPaises.getLength()];
+
+			for (int i = 0; i < nPaises.getLength(); i++) {
+				Node nodo = nPaises.item(i);
+				if (nodo.getNodeType() == Node.ELEMENT_NODE) {
+
+					Element element = (Element) nodo;
+					String nom = element.getAttribute("nombre");
+					String sis = element.getElementsByTagName("sistema").item(0).getTextContent();
+					String mon = element.getElementsByTagName("moneda").item(0).getTextContent();
+					String idi = element.getElementsByTagName("idioma").item(0).getTextContent();
+					int sup = Integer.parseInt(element.getElementsByTagName("superficie").item(0).getTextContent());
+
+					listaPaises[i] = new Pais(nom, sis, sup, mon, idi);
+					System.out.println(listaPaises[i].toString());
+				}
+			}
+
+		} catch (Exception e) {
+			System.out.println("Error de lectura.");
+		}
+
+	}
+
+}
