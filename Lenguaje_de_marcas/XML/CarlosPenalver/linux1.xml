@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE distribuciones SYSTEM "linux2.dtd">
+<distribuciones>
+<distribucion id="DEBIAN">
+<nombre>Debian GNU/Linux</nombre>
+<Nacimiento>1993</Nacimiento>
+<web>www.debian.org</web>
+</distribucion>
+<distribucion id="KDE">
+<nombre>KDE</nombre>
+<Nacimiento>1996</Nacimiento>
+<web>kde.org</web>
+</distribucion>
+<distribucion id="GNOME">
+<nombre>GNOME</nombre>
+<Nacimiento>1998</Nacimiento>
+<web>www.gnome.org</web>
+</distribucion>
+<distribucion id="REDHAT">
+<nombre>Red Hat Linux</nombre>
+<Nacimiento>2003</Nacimiento>
+<web>www.redhat.com</web>
+</distribucion>
+</distribuciones>

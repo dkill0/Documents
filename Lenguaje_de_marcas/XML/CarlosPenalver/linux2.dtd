@@ -1,0 +1,7 @@
+<!ELEMENT distribuciones (distribucion+)>
+<!ELEMENT distribucion (nombre, Nacimiento, web)>
+<!ATTLIST distribucion
+          id CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT Nacimiento (#PCDATA)>
+<!ELEMENT web (#PCDATA)>
