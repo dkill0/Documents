@@ -1,0 +1,17 @@
+<!ELEMENT cine (peliculas, salas)>
+<!ELEMENT peliculas (pelicula+)>
+<!ELEMENT pelicula (titulo, añoEstreno, actor)>
+<!ATTLIST pelicula
+          codigo ID #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT añoEstreno (#PCDATA)>
+<!ELEMENT actor (#PCDATA)>
+<!ELEMENT salas (sala+)>
+<!ELEMENT sala (nombre, peliculaEmitida, sesion)>
+<!ATTLIST sala
+          codSala ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT peliculaEmitida (#PCDATA)>
+<!ATTLIST peliculaEmitida
+          codigo IDREFS #REQUIRED>
+<!ELEMENT sesion (#PCDATA)>

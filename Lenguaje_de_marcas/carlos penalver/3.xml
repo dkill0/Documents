@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE paises SYSTEM "03_paises.dtd">
+<paises>
+    <pais nombre="ESP">
+        <superficie unidad="km2">504.654</superficie>
+        <moneda>euro</moneda>
+        <gobierno sistema="monarquia" />
+        <fronteras pais="FRA" />
+        <idioma>Español</idioma>
+    </pais>
+    <pais nombre="FRA">
+        <superficie unidad="km2">675.417</superficie>
+        <moneda>euro</moneda>
+        <gobierno sistema="republica" />
+        <fronteras pais="ESP SZA" />
+        <idioma>Frances</idioma>
+    </pais>
+    <pais nombre="SZA">
+        <superficie unidad="km2">41.290</superficie>
+        <moneda>franco suizo</moneda>
+        <gobierno sistema="republica" />
+        <fronteras/>
+        <idioma>frances, aleman, italiano y romanche</idioma>
+    </pais>
+</paises>

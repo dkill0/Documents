@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<viajes>
+    <viaje origen="murcia" destino="londres">
+        <salida>10:30</salida>
+        <llegada>12:45</llegada>
+    </viaje>
+    <viaje origen="murcia" destino="manchester">
+        <salida>11:15</salida>
+        <llegada>13:50</llegada>
+    </viaje>
+</viajes>

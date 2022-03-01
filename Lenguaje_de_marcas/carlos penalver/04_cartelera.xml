@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cartelera SYSTEM "04_cine.dtd">
+
+<cartelera> 
+    <pelicula codigo="P01" duracion="122" año="2019"> 
+        <titulo>JOKER</titulo> 
+        <nacionalidad>Estados Unidos</nacionalidad> 
+        <genero>Drama</genero> 
+        <clasificacion edad="18"/> 
+        <sinopsis>
+        Arthur Fleck adora hacer reir a la gente, pero su carrera como comediante es un fracaso. 
+        El repudio social, la marginación y una serie de trágicos acontecimientos lo conducen 
+        por el sendero de la locura y, finalmente, cae en el mundo del crimen.
+        </sinopsis> 
+        <director>Todd Phillips</director> 
+        <reparto> 
+            <actor>Joaquin Phoenix</actor> 
+            <actor>Robert De Niro</actor> 
+            <actriz>Zazie Beetz</actriz> 
+        </reparto> 
+        <web>http://www.jokermovie.net</web> 
+    </pelicula> 
+    <pelicula codigo="P02" duracion="127" año="2019"> 
+        <titulo>JUMANJI: EL SIGUIENTE NIVEL</titulo> 
+        <titulo_original>Jumanji: The Next Level</titulo_original> 
+        <nacionalidad>Estados Unidos</nacionalidad> 
+        <genero>Aventuras</genero> 
+        <clasificacion edad="TP"/> 
+        <sinopsis> 
+        Las aventuras continúan en el fantástico mundo del juego de Jumanji, donde nada es lo que parece.
+        En esta ocasión, los jugadores vuelven al juego, pero sus personajes se han intercambiado entre sí.
+        </sinopsis> 
+        <director>Jake Kasdan</director> 
+        <reparto> 
+            <actor>Dwayne Johnson</actor> 
+            <actriz>Karen Gillan</actriz> 
+            <actor>Kevin Hart</actor> 
+            <actor>Jack Black</actor> 
+        </reparto> 
+    </pelicula> 
+    <pelicula codigo="P03" duracion="107" año="2019"> 
+        <titulo>MIENTRAS DURE LA GUERRA</titulo> 
+        <nacionalidad>ESPAÑA</nacionalidad> 
+        <genero>Drama</genero> 
+        <sin_clasificar/> 
+        <sinopsis> 
+        España, 1936. El célebre escritor Miguel de Unamuno decide apoyar públicamente la sublevación militar. 
+        Inmediantamente es destituido por el gobierno republicano como rector de la Universidad de Salamanca.      
+        </sinopsis> 
+        <director>Alejandro Amenábar</director> 
+        <reparto> 
+            <actor>Karra Elejalde</actor> 
+            <actriz>Nathalie Poza</actriz> 
+            <actor>Eduard Fernández</actor> 
+        </reparto> 
+    </pelicula> 
+</cartelera>

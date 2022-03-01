@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cine SYSTEM "07_cine.dtd">
+
+<cine>
+    <peliculas>
+        <pelicula codigo="JOK">
+            <titulo>Joker</titulo>
+            <añoEstreno>2019</añoEstreno>
+            <actor>Joaquin Phoenix</actor>
+        </pelicula>
+        <pelicula codigo="DARK">
+            <titulo>"The Dark Knight"</titulo>
+            <añoEstreno>2008</añoEstreno>
+            <actor>Heath Ledger</actor>
+        </pelicula>
+        <pelicula codigo="BAT">
+            <titulo>Batman</titulo>
+            <añoEstreno>1989</añoEstreno>
+            <actor>Jack Nicolson</actor>
+        </pelicula>
+    </peliculas>
+    <salas>
+        <sala codSala="S1">
+            <nombre>Sala 1</nombre>
+            <peliculaEmitida codigo="JOK"/>
+            <sesion>16:00, 19:30, 22:00</sesion>
+        </sala>
+        <sala codSala="S2">
+            <nombre>Sala 2</nombre>
+            <peliculaEmitida codigo="DARK"/>
+            <sesion>18:00, 21:30</sesion>
+        </sala>
+        <sala codSala="S3">
+            <nombre>Sala 1</nombre>
+            <peliculaEmitida codigo="BAT"/>
+            <sesion>20:00, 22:30</sesion>
+        </sala>
+    </salas>
+
+
+</cine>
