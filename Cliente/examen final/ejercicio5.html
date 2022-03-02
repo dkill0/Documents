@@ -27,15 +27,7 @@
 
 <script>
     function clona(valor) {
-        let node;
-
-        node = document.getElementById("select1").childNodes[valor];
-
-
-        console.log(node);
-        console.log(valor);
-        console.log(document.getElementById("select1").childNodes.text);
-
+        let node = document.getElementById("select1").childNodes[valor];
 
         let clone = document.adoptNode(node);
 
