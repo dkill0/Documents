@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+</body>
+
+</html>
+
+<script>
+    document.body.onload = addElement;
+
+    function addElement() {
+
+        var div1 = document.createElement("div");
+        var newContent = document.createTextNode("Este es el primer texto");
+        div1.appendChild(newContent);
+        div1.style.color = "red";
+        div1.id = "primero";
+        var div2 = document.createElement("div");
+        var parraf = document.createElement("p");
+        var texto = document.createTextNode("Este es el segundo texto");
+
+        parraf.appendChild(texto);
+        div2.appendChild(parraf);
+        div2.id = "segundo";
+
+        parraf.style.color = "blue";
+        document.body.appendChild(div1);
+        document.body.appendChild(div2);
+
+    }
+</script>
