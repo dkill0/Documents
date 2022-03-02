@@ -1,0 +1,16 @@
+linux
+
+4 partes
+parte a tipo test 15 preguntas 3 puntos (6 aciertos)
+parte b cuatro puntos preguntas a desarrollar 4 puntos
+parte c usuario practica 2 puntos
+parte d problemas sobre sai 1 punto
+
+
+cliente
+
+3 aplicaciones (3.5, 3.5, 3)
+
+
+
+
