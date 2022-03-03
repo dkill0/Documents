@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="formcss.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +10,20 @@
 </head>
 
 <body>
-    <input type="text"> <br>
-    <input type="text"> <br>
-    <input type="number"><br>
-    <input type="date"><br>
-    <input type="passwd"><br>
-    <input type="number"><br>
-    <input type="email"><br>
-    <input type="submit">
-    <input type="reset">
-    <input type="submit">
+    <form action="">
+        <input maxlength="30" title="Introduce tu nombre" type="text" placeholder="nombre" required autocomplete="on"> <br>
 
+        <input type="text" maxlength="50" size="40" placeholder="apellido" required autocomplete="on"> <br>
+        <input class="numeros" pattern="[0-9]{3}" max="130" min="0" type="text" placeholder="edad" type="number" required autocomplete="on"> <br>
+        <input min="1/01/2000" type="date" placeholder="fecha alta" required autocomplete="on"> <br>
+        <input pattern="[0-9]{4}" type="passwd" placeholder="contraseña" required autocomplete="on"> <br>
+        <input class="numeros" type="number" step="5" placeholder="dependencia" min="0" max="100" required autocomplete="on"> <br>
+        <input type="email" autofocus="on" placeholder="email" required autocomplete="on"> <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+        <button type="submit" formnovalidate="true">Enviar sin validar</button>
+
+    </form>
 
 </body>
 

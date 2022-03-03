@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formularios</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body>
+    <form>
+        <input type="text" name="nombre" maxlength="30" placeholder="Nombre" required autocomplete="true" title="Introduce tu nombre"><br><br>
+        <input type="text" name="apellidos" maxlength="50" placeholder="Apellidos" size="40" required autocomplete="true" title="Introduce tus apellidos"><br><br>
+        <input type="number" class="n" name="edad" min="0" max="130" placeholder="Edad" required title="Introduce tu edad"><br><br>
+        <input type="date" name="fechaAlta" min="2000-01-01" placeholder="Fecha Alta" required title="Introduce tu fecha de alta"><br><br>
+        <input type="password" name="contraseña" maxlength="4" placeholder="Contraseña" required title="Introduce tu porcentaje de dependencia"><br><br>
+        <input type="number" class="n" name="dependencia" step="5" min="0" max="100" placeholder="Dependencia" required title="Introduce tu email"><br><br>
+        <input type="email" name="email" placeholder="Email" autofocus requiered><br><br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+        <button type="submit" formnovalidate="true">Enviar tin validar</button>
+    </form>
+</body>
+
+</html>
