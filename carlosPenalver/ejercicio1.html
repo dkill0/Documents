@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<style>
+    #container {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: yellow;
+    }
+    
+    #animate {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 150px;
+        left: 150px;
+        background-color: red;
+    }
+</style>
+
+<body>
+
+    <button onclick='myMove("derecha")'>Derecha</button>
+    <button onclick='myMove("izquierda")'>Izquierda</button>
+    <button onclick='myMove("arriba")'>Arriba</button>
+    <button onclick='myMove("abajo")'>Abajo</button>
+
+
+
+    <div id="container">
+        <div id="animate"></div>
+    </div>
+
+    <div>
+        <h1 id="historial">Historial</h1>
+        <p></p>
+    </div>
+
+    <script>
+        function myMove(posicion) {
+            let pos;
+            let node;
+            let eti;
+            console.log(posicion);
+            let id = null;
+            const elem = document.getElementById("animate");
+            switch (posicion) {
+                case "arriba":
+                    eti = document.createElement("p");
+                    node = document.createTextNode("-" + posicion);
+                    eti.appendChild(node);
+                    document.body.appendChild(eti);
+
+                    pos = 150;
+                    clearInterval(id);
+                    id = setInterval(frame, 5);
+
+                    function frame() {
+                        if (pos == 0) {
+                            pos--;
+                            elem.style.top = pos + "px";
+
+                        } else if (pos == 149) {
+                            clearInterval(id);
+
+                        } else {
+                            pos++;
+                            elem.style.top = pos + "px";
+                        }
+                    }
+                    break;
+                case "abajo":
+                    // pos = 150;
+                    // clearInterval(id);
+                    // id = setInterval(frame, 5);
+
+                    // function frame() {
+                    //     if (pos > 0) {
+                    //         pos++;
+                    //         elem.style.top = pos + "px";
+
+                    //     } else if (pos < 0) {
+                    //         //clearInterval(id);
+                    //         pos--;
+                    //         elem.style.top = pos + "px";
+
+                    //     } else if (pos == 150) {
+
+                    //         pos--;
+                    //         elem.style.top = pos + "px";
+                    //     }
+                    // }
+                    break;
+                case "derecha":
+
+                    break;
+                case "izquierda":
+
+                    break;
+
+                default:
+                    break;
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
