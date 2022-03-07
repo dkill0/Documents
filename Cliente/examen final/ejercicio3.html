@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function crea() {
+
+            for (let i = 1; i < 11; i++) {
+
+                let parrafo = document.createElement("p");
+                let texto = document.createTextNode("lorem ipsum dolor sit amet consectetur ");
+                parrafo.id = i;
+                parrafo.appendChild(texto);
+
+                document.body.appendChild(parrafo);
+            }
+        }
+
+        function colorea() {
+            for (let j = 1; j < 11; j++) {
+                if (j % 2 != 0) {
+
+                    let cambia = document.getElementById(j);
+                    cambia.style.color = "red";
+                }
+
+            }
+        }
+
+        function agranda() {
+
+            for (let i = 1; i < 11; i++) {
+                if (i > 5) {
+                    let agranda = document.getElementById(i);
+                    agranda.style.fontSize = "50px";
+                }
+
+            }
+        }
+    </script>
+    <button onclick="crea()">Crea p</button>
+    <button onclick="colorea()">Colorea p</button>
+    <button onclick="agranda()">Agranda p</button>
+
+
+</body>
+
+</html>

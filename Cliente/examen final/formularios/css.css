@@ -1,0 +1,15 @@
+button:nth-last-child(3){
+	background-color: green;
+}
+button:nth-last-child(2){
+	background-color: green;
+}
+button:nth-last-child(1){
+	color: pink;
+}
+.n:valid{
+	background-color: green;
+}
+.n:invalid{
+	background-color: red;
+}

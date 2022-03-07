@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="color">sdf</div>
+    <div class="fuente">sdf</div>
+    <div class="color">sdf</div>
+    <div class="fuente">sdf</div>
+    <button onclick="cambia()">Cambia</button>
+</body>
+
+</html>
+
+<script>
+    function cambia() {
+        let divs = document.getElementsByTagName("div");
+        let colores = document.getElementsByClassName("color");
+        let fuentes = document.getElementsByClassName("fuente");
+        for (let i = 0; i < divs.length; i++) {
+            colores[i].style.color = "green";
+            fuentes[i].style.fontSize = "54px";
+        }
+    }
+</script>

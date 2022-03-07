@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <select name="select1" id="select1">
+        <option value="1">Lunes</option>
+        <option value="2">Martes</option>
+        <option value="3">Miercoles</option>
+        <option value="4">Jueves</option>
+        <option value="5">Viernes</option>
+        <option value="6">Sabado</option>
+        <option value="7">Domingo</option>
+    </select>
+    <!-- <button onclick="clona(document.getElementById('select1').value);">Cambia</button> -->
+    <button onclick="clona();">Cambia</button>
+
+    <select name="select2" id="select2"></select>
+</body>
+
+</html>
+
+<script>
+    // function clona(valor) {
+    //     let node = document.getElementById("select1").[childNodes[valor]];
+
+    //     let clone = document.adoptNode(node);
+
+    //     let selector = document.getElementById("select2");
+    //     selector.appendChild(clone);
+
+    // }
+
+
+    function clona(valor) {
+        let i = 0;
+        let select1 = document.getElementsByTagName("select")[0].value;
+        var select2 = document.getElementsByTagName("select")[1];
+        let option = document.getElementsByTagName("option")[select1 - 1];
+        select2.appendChild(option);
+
+        i++;
+    }
+</script>

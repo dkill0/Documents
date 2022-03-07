@@ -1,0 +1,19 @@
+.numeros:valid {
+    background-color: green;
+}
+
+.numeros:invalid {
+    background-color: red;
+}
+
+button:nth-last-of-type(2) {
+    background-color: green;
+}
+
+button:nth-last-of-type(3) {
+    background-color: green;
+}
+
+button:nth-last-of-type(1) {
+    color: pink;
+}
