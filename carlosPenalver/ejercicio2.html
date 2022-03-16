@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Elige una etiqueta a añadir</p>
+    <input id="etiqueta" type="text">
+    <input onclick="nuevaEti()" type="submit">
+</body>
+
+</html>
+
+<script>
+    function nuevaEti() {
+        let nuevaEt = document.getElementById("etiqueta").value;
+        let array = nuevaEt.split(",")
+
+        for (let i = 0; i < array.length; i++) {
+            let eti = document.createElement(array[i]);
+            let node = document.createTextNode("La etiqueta añadida es: " + array[i]);
+            eti.appendChild(node);
+            document.body.appendChild(eti);
+
+        }
+    }
+</script>

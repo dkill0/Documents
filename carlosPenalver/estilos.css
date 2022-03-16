@@ -1,0 +1,11 @@
+.numero:valid {
+    background-color: green;
+}
+
+.numero:invalid {
+    background-color: red;
+}
+
+button:nth-last-of-type(2) {
+    background: green;
+}

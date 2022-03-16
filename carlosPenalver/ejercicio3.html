@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function validar() {
+        let edad = document.forms["formulario"]["edad"].value;
+        if (edad == "") {
+            alert("Edad es obligatoria");
+            return false;
+        } else if (edad < 0 || edad > 130) {
+            alert("La edad debe ser entre 0 y 130");
+            return false;
+        }
+        let fecha = document.forms["formulario"]["fecha"].value;
+        if (fecha == "") {
+            alert("fecha es obligatoria");
+            return false;
+        } else if (fecha < "2000-01-01") {
+            alert("fecha debe ser mayor que 01-01-2000");
+            return false;
+        }
+        let dependencia = document.forms["formulario"]["dependencia"].value;
+        if (dependencia == "") {
+            alert("Dependencia es obligatoria");
+            return false;
+        } else if (dependencia % 5 != 0) {
+            alert("La edad debe ser multiplo de 5");
+            return false;
+        }
+        alert("todos son correctos");
+
+
+
+
+    }
+</script>
+
+<body>
+    <form name="formulario" onsubmit="return validar()">
+        <p>Edad</p>
+        <input name="edad" class="numero" min="0" max="130" type="number" required> <br> <br>
+        <p>Fecha de alta</p>
+        <input name="fecha" type="date" min="2000-01-01" required> <br> <br>
+        <p>Dependencia</p>
+        <input name="dependencia" class="numero" type="number" step="5" min="0" max="100" required> <br> <br>
+        <button type="submit" formnovalidate="true">Enviar</button>
+        <button type="reset">Reset</button>
+    </form>
+
+
+</body>
+
+</html>
